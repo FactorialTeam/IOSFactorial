@@ -57,6 +57,10 @@
 		052980492167C09100AC6348 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0529803F2167C09000AC6348 /* OpenSans-ExtraBoldItalic.ttf */; };
 		0529804A2167C09100AC6348 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 052980402167C09000AC6348 /* OpenSans-Regular.ttf */; };
 		0529804B2167C09100AC6348 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 052980412167C09000AC6348 /* OpenSans-BoldItalic.ttf */; };
+		052980502167D28A00AC6348 /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529804D2167D28A00AC6348 /* menuButton@2x.png */; };
+		052980512167D28A00AC6348 /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529804E2167D28A00AC6348 /* menuButton.png */; };
+		052980522167D28A00AC6348 /* menuButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529804F2167D28A00AC6348 /* menuButton@3x.png */; };
+		052980542167D95800AC6348 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980532167D95800AC6348 /* GenerateViewController.swift */; };
 		6C5DAB495E82CC9CD00294F5 /* Pods_Factorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +117,10 @@
 		0529803F2167C09000AC6348 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		052980402167C09000AC6348 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		052980412167C09000AC6348 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0529804D2167D28A00AC6348 /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
+		0529804E2167D28A00AC6348 /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuButton.png; sourceTree = "<group>"; };
+		0529804F2167D28A00AC6348 /* menuButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@3x.png"; sourceTree = "<group>"; };
+		052980532167D95800AC6348 /* GenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
 		077F0F016E49CC34A1807DF6 /* Pods-Factorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.debug.xcconfig"; sourceTree = "<group>"; };
 		4889BE0F67AC5586E5A72B64 /* Pods-Factorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.release.xcconfig"; sourceTree = "<group>"; };
 		EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				05297F5021677E2F00AC6348 /* AppDelegate.swift */,
+				0529804C2167D28A00AC6348 /* Resources */,
 				05297F652167965800AC6348 /* Shared */,
 				05297F622167950E00AC6348 /* Controllers */,
 				05297F5421677E2F00AC6348 /* Main.storyboard */,
@@ -313,6 +322,7 @@
 				0529802B2167B22400AC6348 /* HomeViewController.swift */,
 				052980312167BE0800AC6348 /* MenuViewController.swift */,
 				0529802D2167B32000AC6348 /* FolderViewController.swift */,
+				052980532167D95800AC6348 /* GenerateViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -348,6 +358,16 @@
 				052980412167C09000AC6348 /* OpenSans-BoldItalic.ttf */,
 			);
 			path = OpenSans;
+			sourceTree = "<group>";
+		};
+		0529804C2167D28A00AC6348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0529804D2167D28A00AC6348 /* menuButton@2x.png */,
+				0529804E2167D28A00AC6348 /* menuButton.png */,
+				0529804F2167D28A00AC6348 /* menuButton@3x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		DE1BFEBB8D4BD481D4DA6178 /* Frameworks */ = {
@@ -430,13 +450,16 @@
 			files = (
 				052980432167C09100AC6348 /* OpenSans-Light.ttf in Resources */,
 				0529802921679BA500AC6348 /* Login.storyboard in Resources */,
+				052980512167D28A00AC6348 /* menuButton.png in Resources */,
 				05297F5B21677E3100AC6348 /* LaunchScreen.storyboard in Resources */,
 				052980452167C09100AC6348 /* OpenSans-ExtraBold.ttf in Resources */,
 				05297F5821677E3100AC6348 /* Assets.xcassets in Resources */,
 				05297F5621677E2F00AC6348 /* Main.storyboard in Resources */,
 				052980422167C09100AC6348 /* OpenSans-Semibold.ttf in Resources */,
+				052980522167D28A00AC6348 /* menuButton@3x.png in Resources */,
 				052980492167C09100AC6348 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				052980442167C09100AC6348 /* OpenSans-Italic.ttf in Resources */,
+				052980502167D28A00AC6348 /* menuButton@2x.png in Resources */,
 				052980472167C09100AC6348 /* OpenSans-Bold.ttf in Resources */,
 				0529804B2167C09100AC6348 /* OpenSans-BoldItalic.ttf in Resources */,
 				052980462167C09100AC6348 /* OpenSans-LightItalic.ttf in Resources */,
@@ -535,6 +558,7 @@
 				0529801A216798AC00AC6348 /* BaseModulFactoryImp.swift in Sources */,
 				05297FCB2167965800AC6348 /* UINavigationControllerAdditions.swift in Sources */,
 				052980092167978B00AC6348 /* AuthCoordinator.swift in Sources */,
+				052980542167D95800AC6348 /* GenerateViewController.swift in Sources */,
 				0529800D2167978B00AC6348 /* AppRouterImp.swift in Sources */,
 				0529800B2167978B00AC6348 /* AppRouter.swift in Sources */,
 				0529802421679A0400AC6348 /* SignUpViewController.swift in Sources */,

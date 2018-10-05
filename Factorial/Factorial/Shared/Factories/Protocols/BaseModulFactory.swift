@@ -13,7 +13,7 @@ protocol BaseModulFactory {
     func makeHomeViewController() -> HomeViewController
     func makeFolderViewController() -> FolderViewController
     func makeMenuViewController(delegate: MenuViewControllerDelegate) -> MenuViewController
-    
+    func makeGenerateViewController() -> GenerateViewController
     
 }
 

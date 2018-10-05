@@ -54,8 +54,8 @@ final class DrawerCoordinator: BaseCoordinator {
     }
     
     private func makedrawerController() -> MMDrawerController {
-        let menuVC = factory.makeHomeViewController()
-        let storsViewControlle = factory.makeFolderViewController()
+        let menuVC = factory.makeMenuViewController(delegate: self)
+        let storsViewControlle = factory.makeHomeViewController()
    
         let storsViewControlleNavController = storsViewControlle.embedInNavigationController()
         let drawer = factory.makeDrawerController(center:storsViewControlleNavController , leftDrawerViewController:menuVC )

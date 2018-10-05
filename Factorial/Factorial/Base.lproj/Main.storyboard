@@ -17,13 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwz-fX-g0o">
-                                <rect key="frame" x="171" y="188" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwl-L1-f5z">
+                                <rect key="frame" x="20" y="502" width="335" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Genrate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BbZ-Hp-ZEx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,6 +60,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCg-7J-IhZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="682" y="-123"/>
+        </scene>
+        <!--Generate View Controller-->
+        <scene sceneID="QE6-el-NwF">
+            <objects>
+                <viewController storyboardIdentifier="GenerateViewController" id="n2a-LZ-USu" customClass="GenerateViewController" customModule="Factorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O1e-Yy-NRD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hLo-B6-OK2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zG-fa-U5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1407" y="-171"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="gMm-pr-ShX">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="kRV-f0-8j7" customClass="MenuViewController" customModule="Factorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RQF-5h-Tmx"/>
+                        <viewControllerLayoutGuide type="bottom" id="I6I-wi-9F6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="34F-nt-crb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nvq-gg-xvR">
+                                <rect key="frame" x="0.0" y="100" width="375" height="320"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="YI5-Zf-MDj"/>
+                                </constraints>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kRV-f0-8j7" id="VyJ-CR-s4e"/>
+                                    <outlet property="delegate" destination="kRV-f0-8j7" id="mqp-Ui-xnw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.25882352939999997" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nvq-gg-xvR" firstAttribute="leading" secondItem="34F-nt-crb" secondAttribute="leading" id="IeM-sm-bPL"/>
+                            <constraint firstItem="Nvq-gg-xvR" firstAttribute="top" secondItem="Wug-iX-B3A" secondAttribute="top" constant="80" id="bJH-26-DR1"/>
+                            <constraint firstAttribute="trailing" secondItem="Nvq-gg-xvR" secondAttribute="trailing" id="zrO-cm-6Fh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wug-iX-B3A"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d7P-Og-T61"/>
+                    <connections>
+                        <outlet property="tableView" destination="Nvq-gg-xvR" id="xlD-DI-ovB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rtn-qz-ShE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-812" y="859"/>
         </scene>
     </scenes>
 </document>

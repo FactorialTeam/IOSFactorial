@@ -10,6 +10,7 @@ final class BaseModulFactoryImp:NSObject, BaseModulFactory {
         drawerController.maximumLeftDrawerWidth = 230
         drawerController.openDrawerGestureModeMask = .all
         drawerController.closeDrawerGestureModeMask = .all
+        
         drawerController.setDrawerVisualStateBlock { (drawer, drawerSide, percentVisible) in
             if let block = MMDrawerVisualState.parallaxVisualStateBlock(withParallaxFactor: 2.0) {
                 block(drawerController, drawerSide, percentVisible);
@@ -34,5 +35,7 @@ final class BaseModulFactoryImp:NSObject, BaseModulFactory {
         return vc
         
     }
+    
+    
 }
 

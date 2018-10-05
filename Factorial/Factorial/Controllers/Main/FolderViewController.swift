@@ -10,9 +10,15 @@ import UIKit
 
 class FolderViewController: UIViewController {
 
+    private lazy var menuButtonItem = UIBarButtonItem.makeMenuBarButton(for: self, action: #selector(menuItemPressed(_:)))
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    }
+    
+    //MARK: Actions
+    @objc private func menuItemPressed(_ sender: Any) {
+        self.mm_drawerController.toggle(.left, animated: true, completion: nil)
     }
     
 
