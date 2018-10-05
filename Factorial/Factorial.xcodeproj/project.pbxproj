@@ -8,20 +8,96 @@
 
 /* Begin PBXBuildFile section */
 		05297F5121677E2F00AC6348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F5021677E2F00AC6348 /* AppDelegate.swift */; };
-		05297F5321677E2F00AC6348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F5221677E2F00AC6348 /* ViewController.swift */; };
 		05297F5621677E2F00AC6348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05297F5421677E2F00AC6348 /* Main.storyboard */; };
 		05297F5821677E3100AC6348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05297F5721677E3100AC6348 /* Assets.xcassets */; };
 		05297F5B21677E3100AC6348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05297F5921677E3100AC6348 /* LaunchScreen.storyboard */; };
+		05297F642167952D00AC6348 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F632167952D00AC6348 /* HomeViewController.swift */; };
+		05297FC12167965800AC6348 /* FloatPriceFromat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F722167965800AC6348 /* FloatPriceFromat.swift */; };
+		05297FC22167965800AC6348 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F732167965800AC6348 /* StringUtils.swift */; };
+		05297FC52167965800AC6348 /* NSDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F772167965800AC6348 /* NSDateHelper.swift */; };
+		05297FC62167965800AC6348 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F782167965800AC6348 /* UIViewControllerExtension.swift */; };
+		05297FC72167965800AC6348 /* UIBarButtonItemDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F792167965800AC6348 /* UIBarButtonItemDefaultButtons.swift */; };
+		05297FC82167965800AC6348 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F7A2167965800AC6348 /* UIViewExtensions.swift */; };
+		05297FC92167965800AC6348 /* StringToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F7B2167965800AC6348 /* StringToDate.swift */; };
+		05297FCA2167965800AC6348 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F7C2167965800AC6348 /* NSObjectExtensions.swift */; };
+		05297FCB2167965800AC6348 /* UINavigationControllerAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F7D2167965800AC6348 /* UINavigationControllerAdditions.swift */; };
+		05297FCC2167965800AC6348 /* ReAddOrderTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F822167965800AC6348 /* ReAddOrderTask.swift */; };
+		05297FCD2167965800AC6348 /* AddOrderTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F832167965800AC6348 /* AddOrderTask.swift */; };
+		05297FCE2167965800AC6348 /* BuyMieOrderForRateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F842167965800AC6348 /* BuyMieOrderForRateTask.swift */; };
+		05297FCF2167965800AC6348 /* GetOrderProductsTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F852167965800AC6348 /* GetOrderProductsTask.swift */; };
+		05297FDF2167965800AC6348 /* BuyMieOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F9A2167965800AC6348 /* BuyMieOperation.swift */; };
+		05297FE02167965800AC6348 /* BuyMieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F9C2167965800AC6348 /* BuyMieResponse.swift */; };
+		05297FE12167965800AC6348 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F9E2167965800AC6348 /* Dispatcher.swift */; };
+		05297FE22167965800AC6348 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F9F2167965800AC6348 /* NetworkDispatcher.swift */; };
+		05297FE32167965800AC6348 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FA12167965800AC6348 /* Environment.swift */; };
+		05297FE42167965800AC6348 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FA42167965800AC6348 /* OrderRequest.swift */; };
+		05297FEB2167965800AC6348 /* StoryboardsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FB12167965800AC6348 /* StoryboardsEnum.swift */; };
+		05297FEC2167965800AC6348 /* BaseModulFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FB42167965800AC6348 /* BaseModulFactoryImp.swift */; };
+		05297FED2167965800AC6348 /* AuthModuleFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FB52167965800AC6348 /* AuthModuleFactoryImp.swift */; };
+		05297FEF2167965800AC6348 /* BaseModulFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FB82167965800AC6348 /* BaseModulFactory.swift */; };
+		05297FF02167965800AC6348 /* AutModulFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FB92167965800AC6348 /* AutModulFactory.swift */; };
+		052980052167978B00AC6348 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FF32167978B00AC6348 /* ApplicationCoordinator.swift */; };
+		052980062167978B00AC6348 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FF42167978B00AC6348 /* BaseCoordinator.swift */; };
+		052980072167978B00AC6348 /* ShopperRatingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FF82167978B00AC6348 /* ShopperRatingCoordinator.swift */; };
+		052980082167978B00AC6348 /* DrawerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FF92167978B00AC6348 /* DrawerCoordinator.swift */; };
+		052980092167978B00AC6348 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FFB2167978B00AC6348 /* AuthCoordinator.swift */; };
+		0529800A2167978B00AC6348 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FFC2167978B00AC6348 /* Coordinator.swift */; };
+		0529800B2167978B00AC6348 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FFF2167978B00AC6348 /* AppRouter.swift */; };
+		0529800C2167978B00AC6348 /* NavRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980002167978B00AC6348 /* NavRouter.swift */; };
+		0529800D2167978B00AC6348 /* AppRouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980012167978B00AC6348 /* AppRouterImp.swift */; };
+		0529800E2167978B00AC6348 /* SlideRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980022167978B00AC6348 /* SlideRouter.swift */; };
+		0529800F2167978B00AC6348 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980032167978B00AC6348 /* Router.swift */; };
+		052980102167978B00AC6348 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980042167978B00AC6348 /* Presentable.swift */; };
+		6C5DAB495E82CC9CD00294F5 /* Pods_Factorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05297F4D21677E2F00AC6348 /* Factorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Factorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05297F5021677E2F00AC6348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05297F5221677E2F00AC6348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05297F5521677E2F00AC6348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05297F5721677E3100AC6348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05297F5A21677E3100AC6348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05297F5C21677E3100AC6348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05297F632167952D00AC6348 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		05297F722167965800AC6348 /* FloatPriceFromat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatPriceFromat.swift; sourceTree = "<group>"; };
+		05297F732167965800AC6348 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		05297F772167965800AC6348 /* NSDateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateHelper.swift; sourceTree = "<group>"; };
+		05297F782167965800AC6348 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		05297F792167965800AC6348 /* UIBarButtonItemDefaultButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemDefaultButtons.swift; sourceTree = "<group>"; };
+		05297F7A2167965800AC6348 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		05297F7B2167965800AC6348 /* StringToDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToDate.swift; sourceTree = "<group>"; };
+		05297F7C2167965800AC6348 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
+		05297F7D2167965800AC6348 /* UINavigationControllerAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerAdditions.swift; sourceTree = "<group>"; };
+		05297F822167965800AC6348 /* ReAddOrderTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReAddOrderTask.swift; sourceTree = "<group>"; };
+		05297F832167965800AC6348 /* AddOrderTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOrderTask.swift; sourceTree = "<group>"; };
+		05297F842167965800AC6348 /* BuyMieOrderForRateTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieOrderForRateTask.swift; sourceTree = "<group>"; };
+		05297F852167965800AC6348 /* GetOrderProductsTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrderProductsTask.swift; sourceTree = "<group>"; };
+		05297F9A2167965800AC6348 /* BuyMieOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieOperation.swift; sourceTree = "<group>"; };
+		05297F9C2167965800AC6348 /* BuyMieResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieResponse.swift; sourceTree = "<group>"; };
+		05297F9E2167965800AC6348 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		05297F9F2167965800AC6348 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		05297FA12167965800AC6348 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		05297FA42167965800AC6348 /* OrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
+		05297FB12167965800AC6348 /* StoryboardsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsEnum.swift; sourceTree = "<group>"; };
+		05297FB42167965800AC6348 /* BaseModulFactoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModulFactoryImp.swift; sourceTree = "<group>"; };
+		05297FB52167965800AC6348 /* AuthModuleFactoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthModuleFactoryImp.swift; sourceTree = "<group>"; };
+		05297FB82167965800AC6348 /* BaseModulFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModulFactory.swift; sourceTree = "<group>"; };
+		05297FB92167965800AC6348 /* AutModulFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutModulFactory.swift; sourceTree = "<group>"; };
+		05297FF32167978B00AC6348 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		05297FF42167978B00AC6348 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		05297FF82167978B00AC6348 /* ShopperRatingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopperRatingCoordinator.swift; sourceTree = "<group>"; };
+		05297FF92167978B00AC6348 /* DrawerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerCoordinator.swift; sourceTree = "<group>"; };
+		05297FFB2167978B00AC6348 /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		05297FFC2167978B00AC6348 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		05297FFF2167978B00AC6348 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		052980002167978B00AC6348 /* NavRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavRouter.swift; sourceTree = "<group>"; };
+		052980012167978B00AC6348 /* AppRouterImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouterImp.swift; sourceTree = "<group>"; };
+		052980022167978B00AC6348 /* SlideRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideRouter.swift; sourceTree = "<group>"; };
+		052980032167978B00AC6348 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		052980042167978B00AC6348 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		077F0F016E49CC34A1807DF6 /* Pods-Factorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.debug.xcconfig"; sourceTree = "<group>"; };
+		4889BE0F67AC5586E5A72B64 /* Pods-Factorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.release.xcconfig"; sourceTree = "<group>"; };
+		EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5DAB495E82CC9CD00294F5 /* Pods_Factorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +117,8 @@
 			children = (
 				05297F4F21677E2F00AC6348 /* Factorial */,
 				05297F4E21677E2F00AC6348 /* Products */,
+				FD57A8F9463DB77ADA6FC6E2 /* Pods */,
+				DE1BFEBB8D4BD481D4DA6178 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +134,250 @@
 			isa = PBXGroup;
 			children = (
 				05297F5021677E2F00AC6348 /* AppDelegate.swift */,
-				05297F5221677E2F00AC6348 /* ViewController.swift */,
+				05297F652167965800AC6348 /* Shared */,
+				05297F622167950E00AC6348 /* Controllers */,
 				05297F5421677E2F00AC6348 /* Main.storyboard */,
 				05297F5721677E3100AC6348 /* Assets.xcassets */,
 				05297F5921677E3100AC6348 /* LaunchScreen.storyboard */,
 				05297F5C21677E3100AC6348 /* Info.plist */,
 			);
 			path = Factorial;
+			sourceTree = "<group>";
+		};
+		05297F622167950E00AC6348 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05297F632167952D00AC6348 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05297F652167965800AC6348 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				05297FF22167978B00AC6348 /* Coordinators */,
+				05297FFD2167978B00AC6348 /* Routers */,
+				05297F712167965800AC6348 /* Extension */,
+				05297F7E2167965800AC6348 /* Networking */,
+				05297FB02167965800AC6348 /* Enum */,
+				05297FB22167965800AC6348 /* Factories */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		05297F712167965800AC6348 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				05297F722167965800AC6348 /* FloatPriceFromat.swift */,
+				05297F732167965800AC6348 /* StringUtils.swift */,
+				05297F772167965800AC6348 /* NSDateHelper.swift */,
+				05297F782167965800AC6348 /* UIViewControllerExtension.swift */,
+				05297F792167965800AC6348 /* UIBarButtonItemDefaultButtons.swift */,
+				05297F7A2167965800AC6348 /* UIViewExtensions.swift */,
+				05297F7B2167965800AC6348 /* StringToDate.swift */,
+				05297F7C2167965800AC6348 /* NSObjectExtensions.swift */,
+				05297F7D2167965800AC6348 /* UINavigationControllerAdditions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		05297F7E2167965800AC6348 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				05297F7F2167965800AC6348 /* Operation */,
+				05297F9B2167965800AC6348 /* Response */,
+				05297F9D2167965800AC6348 /* Dispatcher */,
+				05297FA02167965800AC6348 /* Environment */,
+				05297FA22167965800AC6348 /* Request */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		05297F7F2167965800AC6348 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				05297F802167965800AC6348 /* Tasks */,
+				05297F9A2167965800AC6348 /* BuyMieOperation.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		05297F802167965800AC6348 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				05297F812167965800AC6348 /* OrderTasks */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		05297F812167965800AC6348 /* OrderTasks */ = {
+			isa = PBXGroup;
+			children = (
+				05297F822167965800AC6348 /* ReAddOrderTask.swift */,
+				05297F832167965800AC6348 /* AddOrderTask.swift */,
+				05297F842167965800AC6348 /* BuyMieOrderForRateTask.swift */,
+				05297F852167965800AC6348 /* GetOrderProductsTask.swift */,
+			);
+			path = OrderTasks;
+			sourceTree = "<group>";
+		};
+		05297F9B2167965800AC6348 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				05297F9C2167965800AC6348 /* BuyMieResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		05297F9D2167965800AC6348 /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				05297F9E2167965800AC6348 /* Dispatcher.swift */,
+				05297F9F2167965800AC6348 /* NetworkDispatcher.swift */,
+			);
+			path = Dispatcher;
+			sourceTree = "<group>";
+		};
+		05297FA02167965800AC6348 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				05297FA12167965800AC6348 /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		05297FA22167965800AC6348 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				05297FA32167965800AC6348 /* Order */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		05297FA32167965800AC6348 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				05297FA42167965800AC6348 /* OrderRequest.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		05297FB02167965800AC6348 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				05297FB12167965800AC6348 /* StoryboardsEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		05297FB22167965800AC6348 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				05297FB32167965800AC6348 /* Imp */,
+				05297FB72167965800AC6348 /* Protocols */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		05297FB32167965800AC6348 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				05297FB42167965800AC6348 /* BaseModulFactoryImp.swift */,
+				05297FB52167965800AC6348 /* AuthModuleFactoryImp.swift */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
+		05297FB72167965800AC6348 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				05297FB82167965800AC6348 /* BaseModulFactory.swift */,
+				05297FB92167965800AC6348 /* AutModulFactory.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		05297FF22167978B00AC6348 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				05297FF32167978B00AC6348 /* ApplicationCoordinator.swift */,
+				05297FF42167978B00AC6348 /* BaseCoordinator.swift */,
+				05297FF52167978B00AC6348 /* Flows */,
+				05297FFC2167978B00AC6348 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		05297FF52167978B00AC6348 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				05297FF62167978B00AC6348 /* Main */,
+				05297FFA2167978B00AC6348 /* Login */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		05297FF62167978B00AC6348 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				05297FF72167978B00AC6348 /* Rating */,
+				05297FF92167978B00AC6348 /* DrawerCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		05297FF72167978B00AC6348 /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				05297FF82167978B00AC6348 /* ShopperRatingCoordinator.swift */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
+		05297FFA2167978B00AC6348 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				05297FFB2167978B00AC6348 /* AuthCoordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		05297FFD2167978B00AC6348 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				05297FFE2167978B00AC6348 /* AppRouter */,
+				052980042167978B00AC6348 /* Presentable.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		05297FFE2167978B00AC6348 /* AppRouter */ = {
+			isa = PBXGroup;
+			children = (
+				05297FFF2167978B00AC6348 /* AppRouter.swift */,
+				052980002167978B00AC6348 /* NavRouter.swift */,
+				052980012167978B00AC6348 /* AppRouterImp.swift */,
+				052980022167978B00AC6348 /* SlideRouter.swift */,
+				052980032167978B00AC6348 /* Router.swift */,
+			);
+			path = AppRouter;
+			sourceTree = "<group>";
+		};
+		DE1BFEBB8D4BD481D4DA6178 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD57A8F9463DB77ADA6FC6E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				077F0F016E49CC34A1807DF6 /* Pods-Factorial.debug.xcconfig */,
+				4889BE0F67AC5586E5A72B64 /* Pods-Factorial.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +387,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05297F5F21677E3100AC6348 /* Build configuration list for PBXNativeTarget "Factorial" */;
 			buildPhases = (
+				1F1CBE88AF4359FF35657411 /* [CP] Check Pods Manifest.lock */,
 				05297F4921677E2F00AC6348 /* Sources */,
 				05297F4A21677E2F00AC6348 /* Frameworks */,
 				05297F4B21677E2F00AC6348 /* Resources */,
+				26E2D6A4C5160CD7905804EF /* [CP] Embed Pods Frameworks */,
+				63EE275FE2836C04256560DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +449,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F1CBE88AF4359FF35657411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Factorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26E2D6A4C5160CD7905804EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Factorial/Pods-Factorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Factorial/Pods-Factorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63EE275FE2836C04256560DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Factorial/Pods-Factorial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05297F4921677E2F00AC6348 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05297F5321677E2F00AC6348 /* ViewController.swift in Sources */,
+				05297FCE2167965800AC6348 /* BuyMieOrderForRateTask.swift in Sources */,
+				05297FC72167965800AC6348 /* UIBarButtonItemDefaultButtons.swift in Sources */,
+				05297FE22167965800AC6348 /* NetworkDispatcher.swift in Sources */,
+				05297FC12167965800AC6348 /* FloatPriceFromat.swift in Sources */,
+				05297FE02167965800AC6348 /* BuyMieResponse.swift in Sources */,
+				05297FCA2167965800AC6348 /* NSObjectExtensions.swift in Sources */,
+				05297FEC2167965800AC6348 /* BaseModulFactoryImp.swift in Sources */,
+				05297FE42167965800AC6348 /* OrderRequest.swift in Sources */,
+				0529800F2167978B00AC6348 /* Router.swift in Sources */,
+				05297FCC2167965800AC6348 /* ReAddOrderTask.swift in Sources */,
+				05297FEB2167965800AC6348 /* StoryboardsEnum.swift in Sources */,
+				05297FEF2167965800AC6348 /* BaseModulFactory.swift in Sources */,
+				052980062167978B00AC6348 /* BaseCoordinator.swift in Sources */,
 				05297F5121677E2F00AC6348 /* AppDelegate.swift in Sources */,
+				052980082167978B00AC6348 /* DrawerCoordinator.swift in Sources */,
+				052980102167978B00AC6348 /* Presentable.swift in Sources */,
+				05297FED2167965800AC6348 /* AuthModuleFactoryImp.swift in Sources */,
+				05297F642167952D00AC6348 /* HomeViewController.swift in Sources */,
+				0529800A2167978B00AC6348 /* Coordinator.swift in Sources */,
+				052980052167978B00AC6348 /* ApplicationCoordinator.swift in Sources */,
+				0529800E2167978B00AC6348 /* SlideRouter.swift in Sources */,
+				05297FC92167965800AC6348 /* StringToDate.swift in Sources */,
+				05297FCD2167965800AC6348 /* AddOrderTask.swift in Sources */,
+				05297FC22167965800AC6348 /* StringUtils.swift in Sources */,
+				05297FC82167965800AC6348 /* UIViewExtensions.swift in Sources */,
+				05297FC52167965800AC6348 /* NSDateHelper.swift in Sources */,
+				05297FDF2167965800AC6348 /* BuyMieOperation.swift in Sources */,
+				05297FCB2167965800AC6348 /* UINavigationControllerAdditions.swift in Sources */,
+				052980092167978B00AC6348 /* AuthCoordinator.swift in Sources */,
+				052980072167978B00AC6348 /* ShopperRatingCoordinator.swift in Sources */,
+				05297FE32167965800AC6348 /* Environment.swift in Sources */,
+				05297FCF2167965800AC6348 /* GetOrderProductsTask.swift in Sources */,
+				0529800D2167978B00AC6348 /* AppRouterImp.swift in Sources */,
+				0529800B2167978B00AC6348 /* AppRouter.swift in Sources */,
+				05297FF02167965800AC6348 /* AutModulFactory.swift in Sources */,
+				05297FE12167965800AC6348 /* Dispatcher.swift in Sources */,
+				0529800C2167978B00AC6348 /* NavRouter.swift in Sources */,
+				05297FC62167965800AC6348 /* UIViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +693,7 @@
 		};
 		05297F6021677E3100AC6348 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077F0F016E49CC34A1807DF6 /* Pods-Factorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +712,7 @@
 		};
 		05297F6121677E3100AC6348 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4889BE0F67AC5586E5A72B64 /* Pods-Factorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

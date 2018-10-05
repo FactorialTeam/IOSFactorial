@@ -1,0 +1,6 @@
+framework module Pods_Factorial {
+  umbrella header "Pods-Factorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
