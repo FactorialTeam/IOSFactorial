@@ -21,7 +21,7 @@ class FolderModel {
 
 //MARK: Keys
 private struct Keys{
-    static let folderName = "folderName"
-    static let folderId = "folderId"
+    static let folderName = "title"
+    static let folderId = "id"
 
 }

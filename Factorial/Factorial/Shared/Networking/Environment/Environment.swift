@@ -17,10 +17,10 @@ enum APIVersion: String {
 }
 public struct Environment {
     
-    static let baseUrl = "http://192.168.2.218/FC/api/Text/"
+    static let baseUrl = "http://192.168.2.215/FC/api/Text/"
 
     static func defaultEnvironment(apiVersion: APIVersion = APIVersion.lastVersion) -> Environment {
-        let host = "\(baseUrl)/\(apiVersion.rawValue)/"
+        let host = baseUrl
         var env = Environment("Default", host: host )
         env.headers = ["Content-Type": "application/json"]
         //TODO: change autantication Logic
@@ -29,7 +29,7 @@ public struct Environment {
     }
     
     static func autEnvironment(apiVersion: APIVersion = APIVersion.lastVersion) -> Environment {
-        let host = "\(baseUrl)/\(apiVersion.rawValue)/"
+        let host = baseUrl
         var env = Environment("Aut", host: host )
         env.headers = ["Content-Type": "application/json"]
 //        if let token =  env.autToken {

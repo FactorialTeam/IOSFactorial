@@ -27,25 +27,13 @@ class GetAllFoldersTask: BuyMieOperation {
                             switch response {
                             case .value(let responseDict):
                                 guard let responseDict = responseDict as? [String: Any],
-                                    let message = responseDict["message"] as? String  else {
+                                    let folderList = responseDict["result"] as? [[String: Any]]  else {
                                         completionError(NetworkErrors.networkMessage(error_: "", message: "Can't rate order"), 200)
                                         return
                                 }
-                                if message != "success" {
-                                    completionError(NetworkErrors.networkMessage(error_: "", message: message), 200)
-                                }else {
-                                    guard let storeDictList = responseDict["stores"] as? [[String: Any]] else {
-                                        completionError(NetworkErrors.networkMessage(error_: "", message: "Can't load stores"), 200)
-                                        return
-                                    }
-                                    if storeDictList.count == 0 {
-                                        completionError(NetworkErrors.noData,0)
-                                        return
-                                    }
-                                    
-                                    let folders = storeDictList.compactMap({FolderModel(with: $0)})
-                                    taskCompletion(folders)
-                                }
+                           
+                                let folders = folderList.compactMap({FolderModel(with: $0)})
+                                taskCompletion(folders)
                                 
                             case .error(let statuseCode, let error):
                                 let erorrMessage = error?.localizedDescription ?? ""

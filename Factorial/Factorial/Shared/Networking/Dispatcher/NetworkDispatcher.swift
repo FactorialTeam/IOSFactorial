@@ -39,7 +39,7 @@ public class NetworkDispatcher: Dispatcher {
 
     private func prepareURLRequest(for request: BuyMieRequest) -> DataRequest {
         // Compose the url
-        let path = "\(environment.host)/\(request.path)"
+        let path = "\(environment.host)\(request.path)"
         var headers: [String: String] = [:]
         var bodyParams: [String: Any]? = [:]
         
@@ -60,9 +60,9 @@ public class NetworkDispatcher: Dispatcher {
         
   
        let dateRequest =  Alamofire.request(path, method: request.method, parameters: bodyParams, encoding: JSONEncoding.default, headers: headers)
-//        print("path \(path)")
-//        print("headers \(headers)")
-//        print("bodyParams \(String(describing: bodyParams))")
+        print("path \(path)")
+        print("headers \(headers)")
+        print("bodyParams \(String(describing: bodyParams))")
         return dateRequest
     }
 }
