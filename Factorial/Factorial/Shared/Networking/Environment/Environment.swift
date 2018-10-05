@@ -17,7 +17,7 @@ enum APIVersion: String {
 }
 public struct Environment {
     
-    static let baseUrl = "HostConfiguration.baseUrl()"
+    static let baseUrl = "http://192.168.2.218/FC/api/Text/"
 
     static func defaultEnvironment(apiVersion: APIVersion = APIVersion.lastVersion) -> Environment {
         let host = "\(baseUrl)/\(apiVersion.rawValue)/"
@@ -32,9 +32,9 @@ public struct Environment {
         let host = "\(baseUrl)/\(apiVersion.rawValue)/"
         var env = Environment("Aut", host: host )
         env.headers = ["Content-Type": "application/json"]
-        if let token =  env.autToken {
-            env.headers = ["Authorization": token]
-        }
+//        if let token =  env.autToken {
+//            env.headers = ["Authorization": token]
+//        }
         return env
     }
     

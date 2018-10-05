@@ -1,22 +1,20 @@
 //
-//  ReAddOrderTask.swift
-//  BuyMie
+//  GetAllFoldersTask.swift
+//  Factorial
 //
-//  Created by Mnats on 8/30/18.
-//  Copyright © 2018 7Smart. All rights reserved.
+//  Created by Mnats on 10/5/18.
+//  Copyright © 2018 Mnats. All rights reserved.
 //
 
 import Foundation
-class ReAddOrderTask: BuyMieOperation {
-    typealias Output = Bool
-    private let orderId: String
+class GetAllFoldersTask: BuyMieOperation {
+    typealias Output = [FolderModel]
     
-    init(orderId: String) {
-        self.orderId = orderId
+    init() {
     }
     
     var request: BuyMieRequest {
-        return OrderRequest.reOrder(orderid: orderId)
+        return FolderRequest.getAllFolders
     }
     
     func execute(in dispatcher: Dispatcher,
@@ -36,7 +34,17 @@ class ReAddOrderTask: BuyMieOperation {
                                 if message != "success" {
                                     completionError(NetworkErrors.networkMessage(error_: "", message: message), 200)
                                 }else {
-                                   taskCompletion(true)
+                                    guard let storeDictList = responseDict["stores"] as? [[String: Any]] else {
+                                        completionError(NetworkErrors.networkMessage(error_: "", message: "Can't load stores"), 200)
+                                        return
+                                    }
+                                    if storeDictList.count == 0 {
+                                        completionError(NetworkErrors.noData,0)
+                                        return
+                                    }
+                                    
+                                    let folders = storeDictList.compactMap({FolderModel(with: $0)})
+                                    taskCompletion(folders)
                                 }
                                 
                             case .error(let statuseCode, let error):

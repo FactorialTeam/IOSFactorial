@@ -61,6 +61,15 @@
 		052980512167D28A00AC6348 /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529804E2167D28A00AC6348 /* menuButton.png */; };
 		052980522167D28A00AC6348 /* menuButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529804F2167D28A00AC6348 /* menuButton@3x.png */; };
 		052980542167D95800AC6348 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980532167D95800AC6348 /* GenerateViewController.swift */; };
+		052980572167DF5600AC6348 /* FolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980562167DF5600AC6348 /* FolderModel.swift */; };
+		0529806F2167E2C700AC6348 /* BuyMieOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980602167E2C700AC6348 /* BuyMieOperation.swift */; };
+		052980702167E2C700AC6348 /* BuyMieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980622167E2C700AC6348 /* BuyMieResponse.swift */; };
+		052980712167E2C700AC6348 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980642167E2C700AC6348 /* Dispatcher.swift */; };
+		052980722167E2C700AC6348 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980652167E2C700AC6348 /* NetworkDispatcher.swift */; };
+		052980732167E2C700AC6348 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980672167E2C700AC6348 /* Environment.swift */; };
+		052980762167E35B00AC6348 /* FolderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980752167E35B00AC6348 /* FolderRequest.swift */; };
+		052980782167E56800AC6348 /* BuyMieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980772167E56800AC6348 /* BuyMieRequest.swift */; };
+		0529807B2167E63100AC6348 /* GetAllFoldersTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529807A2167E63100AC6348 /* GetAllFoldersTask.swift */; };
 		6C5DAB495E82CC9CD00294F5 /* Pods_Factorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +130,15 @@
 		0529804E2167D28A00AC6348 /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuButton.png; sourceTree = "<group>"; };
 		0529804F2167D28A00AC6348 /* menuButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@3x.png"; sourceTree = "<group>"; };
 		052980532167D95800AC6348 /* GenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
+		052980562167DF5600AC6348 /* FolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderModel.swift; sourceTree = "<group>"; };
+		052980602167E2C700AC6348 /* BuyMieOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieOperation.swift; sourceTree = "<group>"; };
+		052980622167E2C700AC6348 /* BuyMieResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieResponse.swift; sourceTree = "<group>"; };
+		052980642167E2C700AC6348 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		052980652167E2C700AC6348 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		052980672167E2C700AC6348 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		052980752167E35B00AC6348 /* FolderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderRequest.swift; sourceTree = "<group>"; };
+		052980772167E56800AC6348 /* BuyMieRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieRequest.swift; sourceTree = "<group>"; };
+		0529807A2167E63100AC6348 /* GetAllFoldersTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllFoldersTask.swift; sourceTree = "<group>"; };
 		077F0F016E49CC34A1807DF6 /* Pods-Factorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.debug.xcconfig"; sourceTree = "<group>"; };
 		4889BE0F67AC5586E5A72B64 /* Pods-Factorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.release.xcconfig"; sourceTree = "<group>"; };
 		EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				05297F5021677E2F00AC6348 /* AppDelegate.swift */,
+				052980552167DF2A00AC6348 /* Model */,
 				0529804C2167D28A00AC6348 /* Resources */,
 				05297F652167965800AC6348 /* Shared */,
 				05297F622167950E00AC6348 /* Controllers */,
@@ -184,6 +203,7 @@
 		05297F652167965800AC6348 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				052980582167E2C700AC6348 /* Networking */,
 				052980362167C09000AC6348 /* Fonts */,
 				052980332167BE5600AC6348 /* Constants */,
 				05298011216798AC00AC6348 /* Factories */,
@@ -370,6 +390,93 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		052980552167DF2A00AC6348 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				052980562167DF5600AC6348 /* FolderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		052980582167E2C700AC6348 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				052980592167E2C700AC6348 /* Operation */,
+				052980612167E2C700AC6348 /* Response */,
+				052980632167E2C700AC6348 /* Dispatcher */,
+				052980662167E2C700AC6348 /* Environment */,
+				052980682167E2C700AC6348 /* Request */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		052980592167E2C700AC6348 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				0529805A2167E2C700AC6348 /* Tasks */,
+				052980602167E2C700AC6348 /* BuyMieOperation.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		0529805A2167E2C700AC6348 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				052980792167E61500AC6348 /* Folder */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		052980612167E2C700AC6348 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				052980622167E2C700AC6348 /* BuyMieResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		052980632167E2C700AC6348 /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				052980642167E2C700AC6348 /* Dispatcher.swift */,
+				052980652167E2C700AC6348 /* NetworkDispatcher.swift */,
+			);
+			path = Dispatcher;
+			sourceTree = "<group>";
+		};
+		052980662167E2C700AC6348 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				052980672167E2C700AC6348 /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		052980682167E2C700AC6348 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				052980772167E56800AC6348 /* BuyMieRequest.swift */,
+				052980692167E2C700AC6348 /* Order */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		052980692167E2C700AC6348 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				052980752167E35B00AC6348 /* FolderRequest.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		052980792167E61500AC6348 /* Folder */ = {
+			isa = PBXGroup;
+			children = (
+				0529807A2167E63100AC6348 /* GetAllFoldersTask.swift */,
+			);
+			path = Folder;
+			sourceTree = "<group>";
+		};
 		DE1BFEBB8D4BD481D4DA6178 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05297FC72167965800AC6348 /* UIBarButtonItemDefaultButtons.swift in Sources */,
+				052980722167E2C700AC6348 /* NetworkDispatcher.swift in Sources */,
 				0529801E216798AC00AC6348 /* AutModulFactory.swift in Sources */,
 				05297FC12167965800AC6348 /* FloatPriceFromat.swift in Sources */,
 				05297FCA2167965800AC6348 /* NSObjectExtensions.swift in Sources */,
@@ -540,6 +648,7 @@
 				05297FEB2167965800AC6348 /* StoryboardsEnum.swift in Sources */,
 				052980062167978B00AC6348 /* BaseCoordinator.swift in Sources */,
 				0529801C216798AC00AC6348 /* CoordinatorFactoryImp.swift in Sources */,
+				052980702167E2C700AC6348 /* BuyMieResponse.swift in Sources */,
 				0529801B216798AC00AC6348 /* AuthModuleFactoryImp.swift in Sources */,
 				05297F5121677E2F00AC6348 /* AppDelegate.swift in Sources */,
 				052980082167978B00AC6348 /* DrawerCoordinator.swift in Sources */,
@@ -550,11 +659,17 @@
 				0529802C2167B22400AC6348 /* HomeViewController.swift in Sources */,
 				0529800E2167978B00AC6348 /* SlideRouter.swift in Sources */,
 				05297FC92167965800AC6348 /* StringToDate.swift in Sources */,
+				0529807B2167E63100AC6348 /* GetAllFoldersTask.swift in Sources */,
 				052980302167B37F00AC6348 /* MenuItem.swift in Sources */,
 				0529802621679A1E00AC6348 /* SignInViewController.swift in Sources */,
 				05297FC22167965800AC6348 /* StringUtils.swift in Sources */,
 				05297FC82167965800AC6348 /* UIViewExtensions.swift in Sources */,
+				052980572167DF5600AC6348 /* FolderModel.swift in Sources */,
+				052980762167E35B00AC6348 /* FolderRequest.swift in Sources */,
+				0529806F2167E2C700AC6348 /* BuyMieOperation.swift in Sources */,
 				05297FC52167965800AC6348 /* NSDateHelper.swift in Sources */,
+				052980712167E2C700AC6348 /* Dispatcher.swift in Sources */,
+				052980782167E56800AC6348 /* BuyMieRequest.swift in Sources */,
 				0529801A216798AC00AC6348 /* BaseModulFactoryImp.swift in Sources */,
 				05297FCB2167965800AC6348 /* UINavigationControllerAdditions.swift in Sources */,
 				052980092167978B00AC6348 /* AuthCoordinator.swift in Sources */,
@@ -568,6 +683,7 @@
 				05297FC62167965800AC6348 /* UIViewControllerExtension.swift in Sources */,
 				05298022216799F100AC6348 /* InitialViewController.swift in Sources */,
 				0529801F216798AC00AC6348 /* CoordinatorFactory.swift in Sources */,
+				052980732167E2C700AC6348 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

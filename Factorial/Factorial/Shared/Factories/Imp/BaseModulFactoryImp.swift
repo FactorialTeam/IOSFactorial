@@ -36,6 +36,11 @@ final class BaseModulFactoryImp:NSObject, BaseModulFactory {
         
     }
     
+    func makeGenerateViewController() -> GenerateViewController {
+        let vc = GenerateViewController.controllerFromStoryboard(.main)
+        return vc
+    }
+    
     
 }
 

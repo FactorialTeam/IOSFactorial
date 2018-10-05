@@ -20,7 +20,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwl-L1-f5z">
                                 <rect key="frame" x="20" y="502" width="335" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95294117649999999" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.72156862745098038" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Genrate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -68,13 +68,44 @@
                     <view key="view" contentMode="scaleToFill" id="O1e-Yy-NRD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m9Q-IX-DaH">
+                                <rect key="frame" x="20" y="60" width="335" height="507"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FC-tB-zm5">
+                                <rect key="frame" x="20" y="597" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.72156862749999995" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Genrate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipi-75-k1l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m9Q-IX-DaH" firstAttribute="trailing" secondItem="hLo-B6-OK2" secondAttribute="trailing" constant="-20" id="4DE-JP-ak0"/>
+                            <constraint firstItem="0FC-tB-zm5" firstAttribute="leading" secondItem="m9Q-IX-DaH" secondAttribute="leading" id="AcP-sF-Pck"/>
+                            <constraint firstItem="0FC-tB-zm5" firstAttribute="bottom" secondItem="hLo-B6-OK2" secondAttribute="bottom" constant="-40" id="Azf-TH-qAV"/>
+                            <constraint firstItem="0FC-tB-zm5" firstAttribute="top" secondItem="m9Q-IX-DaH" secondAttribute="bottom" constant="30" id="RYe-ir-Tgh"/>
+                            <constraint firstItem="m9Q-IX-DaH" firstAttribute="leading" secondItem="hLo-B6-OK2" secondAttribute="leading" constant="20" id="TC9-4b-slt"/>
+                            <constraint firstItem="0FC-tB-zm5" firstAttribute="trailing" secondItem="m9Q-IX-DaH" secondAttribute="trailing" id="e1a-Xk-ZW4"/>
+                            <constraint firstItem="m9Q-IX-DaH" firstAttribute="top" secondItem="hLo-B6-OK2" secondAttribute="top" constant="40" id="mrH-DL-K9A"/>
+                            <constraint firstItem="0FC-tB-zm5" firstAttribute="width" secondItem="m9Q-IX-DaH" secondAttribute="width" id="y2z-1M-E4D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hLo-B6-OK2"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="m9Q-IX-DaH" id="Cw3-iQ-4zp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zG-fa-U5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="-171"/>
+            <point key="canvasLocation" x="1405.5999999999999" y="-171.36431784107947"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="gMm-pr-ShX">
@@ -102,7 +133,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.97647058819999999" green="0.25882352939999997" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.72156862745098038" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nvq-gg-xvR" firstAttribute="leading" secondItem="34F-nt-crb" secondAttribute="leading" id="IeM-sm-bPL"/>
                             <constraint firstItem="Nvq-gg-xvR" firstAttribute="top" secondItem="Wug-iX-B3A" secondAttribute="top" constant="80" id="bJH-26-DR1"/>

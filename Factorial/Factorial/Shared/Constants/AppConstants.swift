@@ -10,7 +10,7 @@ struct Appconstants {
     struct Color {
         struct Navigation {
 //            static let barTint = UIColor(red: 220/255, green: 31/255, blue: 39/255, alpha: 1.0)
-            static let barTint = UIColor(red: 249/255, green: 66/255, blue: 58/255, alpha: 1.0)//F9423A
+            static let barTint = UIColor(red: 27/255, green: 184/255, blue: 147/255, alpha: 1.0)//F9423A
             static let tint = UIColor.white
         }
         static let darkRed = UIColor(red: 234.0 / 255.0, green: 54.0 / 255.0, blue: 54.0 / 255.0, alpha: 1)//ea3939
