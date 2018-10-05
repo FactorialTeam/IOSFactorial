@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="-14" y="-78"/>
         </scene>
-        <!--View Controller-->
+        <!--Folder View Controller-->
         <scene sceneID="hzt-B3-pev">
             <objects>
-                <viewController id="ygu-MM-kWy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FolderViewController" id="ygu-MM-kWy" customClass="FolderViewController" customModule="Factorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WvA-q7-f1k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -17,9 +17,16 @@ class InitialViewController: UIViewController {
     weak var delegate: InitialViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    //MARK: Actions
+    @IBAction func signInActiom(_ sender: Any) {
+        delegate?.didTapSigninButton()
+    }
+    
+    @IBAction func signUpActiom(_ sender: Any) {
+        delegate?.didTapSignUpButton()
+    }
 
 }

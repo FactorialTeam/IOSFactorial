@@ -24,14 +24,14 @@ final class AuthCoordinator: BaseCoordinator {
     private func showLogin() {
         let loginVC = factory.makeSignInViewController(delegate: self)
         let navVC = loginVC.embedInNavigationController()
-        navVC.navigationBar.isHidden = true
+        navVC.navigationBar.isHidden = false
         self.navController.present(navVC, animated: true, completion: nil)
     }
     
     private func showSignUp() {
         let signUpVC = factory.makeSignUpViewController(delegate: self)
         let navVC = signUpVC.embedInNavigationController()
-        navVC.navigationBar.isHidden = true
+        navVC.navigationBar.isHidden = false
         self.navController.present(navVC, animated: true, completion: nil)
     }
     
@@ -63,6 +63,7 @@ extension AuthCoordinator: InitialViewControllerDelegate {
     func didCompleteAutoLogin() {
          self.delegate.coordinatorDidAuthenticate(coordinator: self)
     }
+
     
     func didTapSigninButton() {
         showLogin()
