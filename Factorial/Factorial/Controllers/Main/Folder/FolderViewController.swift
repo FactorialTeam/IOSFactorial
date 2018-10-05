@@ -12,6 +12,7 @@ class FolderViewController: UIViewController {
 
     private lazy var menuButtonItem = UIBarButtonItem.makeMenuBarButton(for: self, action: #selector(menuItemPressed(_:)))
     private var folders: [FolderModel]?
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureNavigation()
@@ -34,11 +35,32 @@ class FolderViewController: UIViewController {
         task.execute(in: NetworkDispatcher.autDispatcher(), taskCompletion: {  [weak self] (value) in
             guard let folderList = value, let strongSelf = self else { return }
             strongSelf.folders = folderList
+            strongSelf.tableView.reloadData()
             
         }) { (error, statusCode) in
            
             }
         }
-    
-
 }
+
+
+extension FolderViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return folders?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FolderTableViewCell", for: indexPath) as? FolderTableViewCell
+            else {
+                return UITableViewCell()
+        }
+        if let folders =  folders {
+            let folder = folders[indexPath.row]
+            cell.configure(with: folder)
+        }
+        
+        return cell
+    
+    }
+}
+
