@@ -64,10 +64,6 @@ extension AuthCoordinator: InitialViewControllerDelegate {
          self.delegate.coordinatorDidAuthenticate(coordinator: self)
     }
     
-    func didCompleteFbLogin() {
-        self.checkZipAndCoplete()
-    }
-    
     func didTapSigninButton() {
         showLogin()
     }
@@ -76,28 +72,5 @@ extension AuthCoordinator: InitialViewControllerDelegate {
         showSignUp()
     }
     
-    private func checkZipAndCoplete() {
-        if let zipID = User.shared().zipID, !zipID.isEmpty {
-            self.delegate.coordinatorDidAuthenticate(coordinator: self)
-        }else {
-            self.showZipCodes()
-        }
-    }
-    
-    private func showZipCodes() {
-        let vc = BaseModulFactoryImp().makeChooseZipToAddAdressViewController()
-        vc.isRegister = true
-        vc.delegate = self
-        vc.shouldUpdateZipCode = true
-        self.navController.present(vc, animated: true, completion: nil)
-        
-    }
-}
-
-//MARK: ChooseZipToAddAdressViewControllerDelegate
-extension AuthCoordinator: ChooseZipToAddAdressViewControllerDelegate {
-    func addZipName(_ controller: ChooseZipToAddAdressViewController!, didFinishEnteringItem zipName: String!) {
-        self.delegate.coordinatorDidAuthenticate(coordinator: self)
-    }
 }
 

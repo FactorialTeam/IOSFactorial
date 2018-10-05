@@ -20,20 +20,9 @@
 		05297FC92167965800AC6348 /* StringToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F7B2167965800AC6348 /* StringToDate.swift */; };
 		05297FCA2167965800AC6348 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F7C2167965800AC6348 /* NSObjectExtensions.swift */; };
 		05297FCB2167965800AC6348 /* UINavigationControllerAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F7D2167965800AC6348 /* UINavigationControllerAdditions.swift */; };
-		05297FCC2167965800AC6348 /* ReAddOrderTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F822167965800AC6348 /* ReAddOrderTask.swift */; };
-		05297FCD2167965800AC6348 /* AddOrderTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F832167965800AC6348 /* AddOrderTask.swift */; };
-		05297FCE2167965800AC6348 /* BuyMieOrderForRateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F842167965800AC6348 /* BuyMieOrderForRateTask.swift */; };
-		05297FCF2167965800AC6348 /* GetOrderProductsTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F852167965800AC6348 /* GetOrderProductsTask.swift */; };
-		05297FDF2167965800AC6348 /* BuyMieOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F9A2167965800AC6348 /* BuyMieOperation.swift */; };
-		05297FE02167965800AC6348 /* BuyMieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F9C2167965800AC6348 /* BuyMieResponse.swift */; };
-		05297FE12167965800AC6348 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F9E2167965800AC6348 /* Dispatcher.swift */; };
-		05297FE22167965800AC6348 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297F9F2167965800AC6348 /* NetworkDispatcher.swift */; };
-		05297FE32167965800AC6348 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FA12167965800AC6348 /* Environment.swift */; };
-		05297FE42167965800AC6348 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FA42167965800AC6348 /* OrderRequest.swift */; };
 		05297FEB2167965800AC6348 /* StoryboardsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FB12167965800AC6348 /* StoryboardsEnum.swift */; };
 		052980052167978B00AC6348 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FF32167978B00AC6348 /* ApplicationCoordinator.swift */; };
 		052980062167978B00AC6348 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FF42167978B00AC6348 /* BaseCoordinator.swift */; };
-		052980072167978B00AC6348 /* ShopperRatingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FF82167978B00AC6348 /* ShopperRatingCoordinator.swift */; };
 		052980082167978B00AC6348 /* DrawerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FF92167978B00AC6348 /* DrawerCoordinator.swift */; };
 		052980092167978B00AC6348 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FFB2167978B00AC6348 /* AuthCoordinator.swift */; };
 		0529800A2167978B00AC6348 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05297FFC2167978B00AC6348 /* Coordinator.swift */; };
@@ -56,6 +45,18 @@
 		0529802C2167B22400AC6348 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529802B2167B22400AC6348 /* HomeViewController.swift */; };
 		0529802E2167B32000AC6348 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529802D2167B32000AC6348 /* FolderViewController.swift */; };
 		052980302167B37F00AC6348 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529802F2167B37F00AC6348 /* MenuItem.swift */; };
+		052980322167BE0800AC6348 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980312167BE0800AC6348 /* MenuViewController.swift */; };
+		052980352167BE5600AC6348 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980342167BE5600AC6348 /* AppConstants.swift */; };
+		052980422167C09100AC6348 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 052980382167C09000AC6348 /* OpenSans-Semibold.ttf */; };
+		052980432167C09100AC6348 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 052980392167C09000AC6348 /* OpenSans-Light.ttf */; };
+		052980442167C09100AC6348 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0529803A2167C09000AC6348 /* OpenSans-Italic.ttf */; };
+		052980452167C09100AC6348 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0529803B2167C09000AC6348 /* OpenSans-ExtraBold.ttf */; };
+		052980462167C09100AC6348 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0529803C2167C09000AC6348 /* OpenSans-LightItalic.ttf */; };
+		052980472167C09100AC6348 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0529803D2167C09000AC6348 /* OpenSans-Bold.ttf */; };
+		052980482167C09100AC6348 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0529803E2167C09000AC6348 /* OpenSans-SemiboldItalic.ttf */; };
+		052980492167C09100AC6348 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0529803F2167C09000AC6348 /* OpenSans-ExtraBoldItalic.ttf */; };
+		0529804A2167C09100AC6348 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 052980402167C09000AC6348 /* OpenSans-Regular.ttf */; };
+		0529804B2167C09100AC6348 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 052980412167C09000AC6348 /* OpenSans-BoldItalic.ttf */; };
 		6C5DAB495E82CC9CD00294F5 /* Pods_Factorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,20 +76,9 @@
 		05297F7B2167965800AC6348 /* StringToDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToDate.swift; sourceTree = "<group>"; };
 		05297F7C2167965800AC6348 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		05297F7D2167965800AC6348 /* UINavigationControllerAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerAdditions.swift; sourceTree = "<group>"; };
-		05297F822167965800AC6348 /* ReAddOrderTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReAddOrderTask.swift; sourceTree = "<group>"; };
-		05297F832167965800AC6348 /* AddOrderTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOrderTask.swift; sourceTree = "<group>"; };
-		05297F842167965800AC6348 /* BuyMieOrderForRateTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieOrderForRateTask.swift; sourceTree = "<group>"; };
-		05297F852167965800AC6348 /* GetOrderProductsTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrderProductsTask.swift; sourceTree = "<group>"; };
-		05297F9A2167965800AC6348 /* BuyMieOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieOperation.swift; sourceTree = "<group>"; };
-		05297F9C2167965800AC6348 /* BuyMieResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMieResponse.swift; sourceTree = "<group>"; };
-		05297F9E2167965800AC6348 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
-		05297F9F2167965800AC6348 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
-		05297FA12167965800AC6348 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		05297FA42167965800AC6348 /* OrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
 		05297FB12167965800AC6348 /* StoryboardsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsEnum.swift; sourceTree = "<group>"; };
 		05297FF32167978B00AC6348 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		05297FF42167978B00AC6348 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		05297FF82167978B00AC6348 /* ShopperRatingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopperRatingCoordinator.swift; sourceTree = "<group>"; };
 		05297FF92167978B00AC6348 /* DrawerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerCoordinator.swift; sourceTree = "<group>"; };
 		05297FFB2167978B00AC6348 /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		05297FFC2167978B00AC6348 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -111,6 +101,18 @@
 		0529802B2167B22400AC6348 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0529802D2167B32000AC6348 /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		0529802F2167B37F00AC6348 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		052980312167BE0800AC6348 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		052980342167BE5600AC6348 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		052980382167C09000AC6348 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		052980392167C09000AC6348 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		0529803A2167C09000AC6348 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		0529803B2167C09000AC6348 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0529803C2167C09000AC6348 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		0529803D2167C09000AC6348 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		0529803E2167C09000AC6348 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		0529803F2167C09000AC6348 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		052980402167C09000AC6348 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		052980412167C09000AC6348 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		077F0F016E49CC34A1807DF6 /* Pods-Factorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.debug.xcconfig"; sourceTree = "<group>"; };
 		4889BE0F67AC5586E5A72B64 /* Pods-Factorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.release.xcconfig"; sourceTree = "<group>"; };
 		EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,11 +175,12 @@
 		05297F652167965800AC6348 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				052980362167C09000AC6348 /* Fonts */,
+				052980332167BE5600AC6348 /* Constants */,
 				05298011216798AC00AC6348 /* Factories */,
 				05297FF22167978B00AC6348 /* Coordinators */,
 				05297FFD2167978B00AC6348 /* Routers */,
 				05297F712167965800AC6348 /* Extension */,
-				05297F7E2167965800AC6348 /* Networking */,
 				05297FB02167965800AC6348 /* Enum */,
 			);
 			path = Shared;
@@ -197,87 +200,6 @@
 				05297F7D2167965800AC6348 /* UINavigationControllerAdditions.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		05297F7E2167965800AC6348 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				05297F7F2167965800AC6348 /* Operation */,
-				05297F9B2167965800AC6348 /* Response */,
-				05297F9D2167965800AC6348 /* Dispatcher */,
-				05297FA02167965800AC6348 /* Environment */,
-				05297FA22167965800AC6348 /* Request */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		05297F7F2167965800AC6348 /* Operation */ = {
-			isa = PBXGroup;
-			children = (
-				05297F802167965800AC6348 /* Tasks */,
-				05297F9A2167965800AC6348 /* BuyMieOperation.swift */,
-			);
-			path = Operation;
-			sourceTree = "<group>";
-		};
-		05297F802167965800AC6348 /* Tasks */ = {
-			isa = PBXGroup;
-			children = (
-				05297F812167965800AC6348 /* OrderTasks */,
-			);
-			path = Tasks;
-			sourceTree = "<group>";
-		};
-		05297F812167965800AC6348 /* OrderTasks */ = {
-			isa = PBXGroup;
-			children = (
-				05297F822167965800AC6348 /* ReAddOrderTask.swift */,
-				05297F832167965800AC6348 /* AddOrderTask.swift */,
-				05297F842167965800AC6348 /* BuyMieOrderForRateTask.swift */,
-				05297F852167965800AC6348 /* GetOrderProductsTask.swift */,
-			);
-			path = OrderTasks;
-			sourceTree = "<group>";
-		};
-		05297F9B2167965800AC6348 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				05297F9C2167965800AC6348 /* BuyMieResponse.swift */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		05297F9D2167965800AC6348 /* Dispatcher */ = {
-			isa = PBXGroup;
-			children = (
-				05297F9E2167965800AC6348 /* Dispatcher.swift */,
-				05297F9F2167965800AC6348 /* NetworkDispatcher.swift */,
-			);
-			path = Dispatcher;
-			sourceTree = "<group>";
-		};
-		05297FA02167965800AC6348 /* Environment */ = {
-			isa = PBXGroup;
-			children = (
-				05297FA12167965800AC6348 /* Environment.swift */,
-			);
-			path = Environment;
-			sourceTree = "<group>";
-		};
-		05297FA22167965800AC6348 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				05297FA32167965800AC6348 /* Order */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		05297FA32167965800AC6348 /* Order */ = {
-			isa = PBXGroup;
-			children = (
-				05297FA42167965800AC6348 /* OrderRequest.swift */,
-			);
-			path = Order;
 			sourceTree = "<group>";
 		};
 		05297FB02167965800AC6348 /* Enum */ = {
@@ -312,18 +234,9 @@
 		05297FF62167978B00AC6348 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				05297FF72167978B00AC6348 /* Rating */,
 				05297FF92167978B00AC6348 /* DrawerCoordinator.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		05297FF72167978B00AC6348 /* Rating */ = {
-			isa = PBXGroup;
-			children = (
-				05297FF82167978B00AC6348 /* ShopperRatingCoordinator.swift */,
-			);
-			path = Rating;
 			sourceTree = "<group>";
 		};
 		05297FFA2167978B00AC6348 /* Login */ = {
@@ -398,9 +311,43 @@
 			isa = PBXGroup;
 			children = (
 				0529802B2167B22400AC6348 /* HomeViewController.swift */,
+				052980312167BE0800AC6348 /* MenuViewController.swift */,
 				0529802D2167B32000AC6348 /* FolderViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		052980332167BE5600AC6348 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				052980342167BE5600AC6348 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		052980362167C09000AC6348 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				052980372167C09000AC6348 /* OpenSans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		052980372167C09000AC6348 /* OpenSans */ = {
+			isa = PBXGroup;
+			children = (
+				052980382167C09000AC6348 /* OpenSans-Semibold.ttf */,
+				052980392167C09000AC6348 /* OpenSans-Light.ttf */,
+				0529803A2167C09000AC6348 /* OpenSans-Italic.ttf */,
+				0529803B2167C09000AC6348 /* OpenSans-ExtraBold.ttf */,
+				0529803C2167C09000AC6348 /* OpenSans-LightItalic.ttf */,
+				0529803D2167C09000AC6348 /* OpenSans-Bold.ttf */,
+				0529803E2167C09000AC6348 /* OpenSans-SemiboldItalic.ttf */,
+				0529803F2167C09000AC6348 /* OpenSans-ExtraBoldItalic.ttf */,
+				052980402167C09000AC6348 /* OpenSans-Regular.ttf */,
+				052980412167C09000AC6348 /* OpenSans-BoldItalic.ttf */,
+			);
+			path = OpenSans;
 			sourceTree = "<group>";
 		};
 		DE1BFEBB8D4BD481D4DA6178 /* Frameworks */ = {
@@ -481,10 +428,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052980432167C09100AC6348 /* OpenSans-Light.ttf in Resources */,
 				0529802921679BA500AC6348 /* Login.storyboard in Resources */,
 				05297F5B21677E3100AC6348 /* LaunchScreen.storyboard in Resources */,
+				052980452167C09100AC6348 /* OpenSans-ExtraBold.ttf in Resources */,
 				05297F5821677E3100AC6348 /* Assets.xcassets in Resources */,
 				05297F5621677E2F00AC6348 /* Main.storyboard in Resources */,
+				052980422167C09100AC6348 /* OpenSans-Semibold.ttf in Resources */,
+				052980492167C09100AC6348 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				052980442167C09100AC6348 /* OpenSans-Italic.ttf in Resources */,
+				052980472167C09100AC6348 /* OpenSans-Bold.ttf in Resources */,
+				0529804B2167C09100AC6348 /* OpenSans-BoldItalic.ttf in Resources */,
+				052980462167C09100AC6348 /* OpenSans-LightItalic.ttf in Resources */,
+				0529804A2167C09100AC6348 /* OpenSans-Regular.ttf in Resources */,
+				052980482167C09100AC6348 /* OpenSans-SemiboldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,17 +508,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05297FCE2167965800AC6348 /* BuyMieOrderForRateTask.swift in Sources */,
 				05297FC72167965800AC6348 /* UIBarButtonItemDefaultButtons.swift in Sources */,
-				05297FE22167965800AC6348 /* NetworkDispatcher.swift in Sources */,
 				0529801E216798AC00AC6348 /* AutModulFactory.swift in Sources */,
 				05297FC12167965800AC6348 /* FloatPriceFromat.swift in Sources */,
-				05297FE02167965800AC6348 /* BuyMieResponse.swift in Sources */,
 				05297FCA2167965800AC6348 /* NSObjectExtensions.swift in Sources */,
-				05297FE42167965800AC6348 /* OrderRequest.swift in Sources */,
 				0529802E2167B32000AC6348 /* FolderViewController.swift in Sources */,
 				0529800F2167978B00AC6348 /* Router.swift in Sources */,
-				05297FCC2167965800AC6348 /* ReAddOrderTask.swift in Sources */,
 				05297FEB2167965800AC6348 /* StoryboardsEnum.swift in Sources */,
 				052980062167978B00AC6348 /* BaseCoordinator.swift in Sources */,
 				0529801C216798AC00AC6348 /* CoordinatorFactoryImp.swift in Sources */,
@@ -570,28 +522,24 @@
 				052980082167978B00AC6348 /* DrawerCoordinator.swift in Sources */,
 				052980102167978B00AC6348 /* Presentable.swift in Sources */,
 				0529800A2167978B00AC6348 /* Coordinator.swift in Sources */,
+				052980352167BE5600AC6348 /* AppConstants.swift in Sources */,
 				052980052167978B00AC6348 /* ApplicationCoordinator.swift in Sources */,
 				0529802C2167B22400AC6348 /* HomeViewController.swift in Sources */,
 				0529800E2167978B00AC6348 /* SlideRouter.swift in Sources */,
 				05297FC92167965800AC6348 /* StringToDate.swift in Sources */,
-				05297FCD2167965800AC6348 /* AddOrderTask.swift in Sources */,
 				052980302167B37F00AC6348 /* MenuItem.swift in Sources */,
 				0529802621679A1E00AC6348 /* SignInViewController.swift in Sources */,
 				05297FC22167965800AC6348 /* StringUtils.swift in Sources */,
 				05297FC82167965800AC6348 /* UIViewExtensions.swift in Sources */,
 				05297FC52167965800AC6348 /* NSDateHelper.swift in Sources */,
 				0529801A216798AC00AC6348 /* BaseModulFactoryImp.swift in Sources */,
-				05297FDF2167965800AC6348 /* BuyMieOperation.swift in Sources */,
 				05297FCB2167965800AC6348 /* UINavigationControllerAdditions.swift in Sources */,
 				052980092167978B00AC6348 /* AuthCoordinator.swift in Sources */,
-				052980072167978B00AC6348 /* ShopperRatingCoordinator.swift in Sources */,
-				05297FE32167965800AC6348 /* Environment.swift in Sources */,
-				05297FCF2167965800AC6348 /* GetOrderProductsTask.swift in Sources */,
 				0529800D2167978B00AC6348 /* AppRouterImp.swift in Sources */,
 				0529800B2167978B00AC6348 /* AppRouter.swift in Sources */,
-				05297FE12167965800AC6348 /* Dispatcher.swift in Sources */,
 				0529802421679A0400AC6348 /* SignUpViewController.swift in Sources */,
 				0529801D216798AC00AC6348 /* BaseModulFactory.swift in Sources */,
+				052980322167BE0800AC6348 /* MenuViewController.swift in Sources */,
 				0529800C2167978B00AC6348 /* NavRouter.swift in Sources */,
 				05297FC62167965800AC6348 /* UIViewControllerExtension.swift in Sources */,
 				05298022216799F100AC6348 /* InitialViewController.swift in Sources */,

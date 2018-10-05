@@ -11,5 +11,4 @@ protocol AuthModuleFactory {
     func makeSignInViewController(delegate:SignInViewControllerDelegate) -> SignInViewController
     func makeInitialViewController() -> InitialViewController
     func makeSignUpViewController(delegate: SignUpViewControllerDelegate) -> SignUpViewController
-    func makeShopperRatingViewController() -> ShopperRatingViewController
 }

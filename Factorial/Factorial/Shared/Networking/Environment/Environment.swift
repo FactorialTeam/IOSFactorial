@@ -17,7 +17,7 @@ enum APIVersion: String {
 }
 public struct Environment {
     
-    static let baseUrl = HostConfiguration.baseUrl()
+    static let baseUrl = "HostConfiguration.baseUrl()"
 
     static func defaultEnvironment(apiVersion: APIVersion = APIVersion.lastVersion) -> Environment {
         let host = "\(baseUrl)/\(apiVersion.rawValue)/"

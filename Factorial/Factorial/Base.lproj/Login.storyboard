@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="1316" y="-84"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="dsV-rD-eyO">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="hTW-eZ-zJP" customClass="SignUpViewController" customModule="Factorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="hTW-eZ-zJP" customClass="SignInViewController" customModule="Factorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VX7-eK-9M9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

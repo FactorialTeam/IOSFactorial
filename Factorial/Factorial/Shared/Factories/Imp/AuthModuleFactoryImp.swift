@@ -18,8 +18,4 @@ final class AuthModuleFactoryImp:NSObject, AuthModuleFactory {
         return vc
     }
     
-    func makeShopperRatingViewController() -> ShopperRatingViewController {
-        return ShopperRatingViewController.controllerFromStoryboard(.login)
-    }
-    
 }

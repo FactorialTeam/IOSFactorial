@@ -7,12 +7,9 @@
 //
 
 import Foundation
-import Kingfisher
 final class ApplicationCoordinator: BaseCoordinator {
-    private let maxCachePeriodInSecond:Double = 60*60*2
     private let router: AppRouter
     private let coordinatorFactory: CoordinatorFactory
-    private lazy var forceUpdateManager: ForceUpdateManager = ForceUpdateManager()
 
     init(router: AppRouter, coordinatorFactory: CoordinatorFactory) {
         self.router = router
@@ -20,25 +17,9 @@ final class ApplicationCoordinator: BaseCoordinator {
     }
     
     override func start() {
-      ImageCache.default.maxCachePeriodInSecond = self.maxCachePeriodInSecond
-      ImageCache.default.cleanExpiredDiskCache()
        runAuthFlow()
     }
     
-    @objc func checkForForceUpdate() {
-        forceUpdateManager.checkVersion()
-    }
-    
-    @objc func tryToSubmitShopperRating() {
-        for element in childCoordinators {
-            if element is DrawerCoordinator {
-                if let drawer = element as? DrawerCoordinator{
-                    drawer.tryToSubmitShopperRating()
-                    return
-                } 
-            }
-        }
-    }
     //MARK: Flows
     fileprivate func runAuthFlow() {
         let coordinator = coordinatorFactory.makeAuthCoordinator(router: self.router, delegate: self)
@@ -52,17 +33,12 @@ final class ApplicationCoordinator: BaseCoordinator {
         coordinator.start()
     }
     
-    private func sendDeviceToken() {
-        if let appDelegate = UIApplication.shared.delegate as? AppDelegate, let userID = User.shared().userID {
-            appDelegate.sendDeviceTokenforUserID(userID)
-        }
-    }
 }
 
 //MARK: DrawerCoordinatorDelegate
 extension ApplicationCoordinator: DrawerCoordinatorDelegate {
     func coordinatorDidLogOut(coordinator:Coordinator) {
-//        dataManager.authorizationManager.logout()
+
         self.runAuthFlow()
         self.removeDependency(coordinator)
     }
@@ -71,7 +47,6 @@ extension ApplicationCoordinator: DrawerCoordinatorDelegate {
 //MARK: AuthCoordinatorDelegate
 extension ApplicationCoordinator: AuthCoordinatorDelegate {
     func coordinatorDidAuthenticate(coordinator:Coordinator) {
-            self.sendDeviceToken()
             self.runMainFlow()
             self.removeDependency(coordinator)
     }

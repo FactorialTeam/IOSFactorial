@@ -8,8 +8,12 @@
 
 import UIKit
 
+protocol SignInViewControllerDelegate: class {
+    func didSuccessfullyLogin()
+}
 class SignInViewController: UIViewController {
 
+    weak var delegate: SignInViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
 

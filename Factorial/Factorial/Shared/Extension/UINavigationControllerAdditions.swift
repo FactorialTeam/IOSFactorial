@@ -14,7 +14,7 @@ extension UINavigationController {
         navigationController.navigationBar.barTintColor = Appconstants.Color.Navigation.barTint
         navigationController.navigationBar.tintColor = Appconstants.Color.Navigation.tint
         navigationController.navigationBar.isTranslucent = false
-        let textAttributes = [NSAttributedStringKey.foregroundColor:Appconstants.Color.Navigation.tint, NSAttributedStringKey.font: Appconstants.Fonts.nvigationTitleFont]
+        let textAttributes = [NSAttributedString.Key.foregroundColor:Appconstants.Color.Navigation.tint, NSAttributedString.Key.font: Appconstants.Fonts.nvigationTitleFont]
         navigationController.navigationBar.titleTextAttributes = textAttributes
         return navigationController
     }
