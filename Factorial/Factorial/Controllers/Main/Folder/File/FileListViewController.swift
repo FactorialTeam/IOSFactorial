@@ -16,6 +16,7 @@ class FileListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadFiles()
+        self.navigationController?.navigationItem.title = "Files"
         
     }
     
