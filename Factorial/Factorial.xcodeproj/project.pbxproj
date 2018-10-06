@@ -80,6 +80,8 @@
 		0529809B216834C400AC6348 /* SaveQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529809A216834C400AC6348 /* SaveQuestionViewController.swift */; };
 		0529809D21683AC600AC6348 /* TextAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529809C21683AC600AC6348 /* TextAnalysisViewController.swift */; };
 		0529809F21683C1000AC6348 /* NLPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529809E21683C0F00AC6348 /* NLPManager.swift */; };
+		052980AB216858E800AC6348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980AA216858E800AC6348 /* ViewController.swift */; };
+		052980AD216863F300AC6348 /* AddQuestionsTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980AC216863F300AC6348 /* AddQuestionsTask.swift */; };
 		6C5DAB495E82CC9CD00294F5 /* Pods_Factorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +161,8 @@
 		0529809A216834C400AC6348 /* SaveQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveQuestionViewController.swift; sourceTree = "<group>"; };
 		0529809C21683AC600AC6348 /* TextAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAnalysisViewController.swift; sourceTree = "<group>"; };
 		0529809E21683C0F00AC6348 /* NLPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NLPManager.swift; path = "../../../../../../../Downloads/NLPDemo-master/NLPDemo/NLPManager.swift"; sourceTree = "<group>"; };
+		052980AA216858E800AC6348 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../../../../../Downloads/SwiftOCR-master/example/iOS/SwiftOCR Camera/SwiftOCR Camera/ViewController.swift"; sourceTree = "<group>"; };
+		052980AC216863F300AC6348 /* AddQuestionsTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionsTask.swift; sourceTree = "<group>"; };
 		077F0F016E49CC34A1807DF6 /* Pods-Factorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.debug.xcconfig"; sourceTree = "<group>"; };
 		4889BE0F67AC5586E5A72B64 /* Pods-Factorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.release.xcconfig"; sourceTree = "<group>"; };
 		EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -365,6 +369,7 @@
 				0529802B2167B22400AC6348 /* HomeViewController.swift */,
 				052980312167BE0800AC6348 /* MenuViewController.swift */,
 				052980532167D95800AC6348 /* GenerateViewController.swift */,
+				052980AA216858E800AC6348 /* ViewController.swift */,
 				0529809C21683AC600AC6348 /* TextAnalysisViewController.swift */,
 			);
 			path = Main;
@@ -534,6 +539,7 @@
 			children = (
 				0529808C2168196800AC6348 /* GetFilesTasks.swift */,
 				0529809621682B0300AC6348 /* AddTextTask.swift */,
+				052980AC216863F300AC6348 /* AddQuestionsTask.swift */,
 			);
 			path = FileModel;
 			sourceTree = "<group>";
@@ -674,13 +680,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Factorial/Pods-Factorial-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftOCR/SwiftOCR.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOCR.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,6 +738,7 @@
 				052980082167978B00AC6348 /* DrawerCoordinator.swift in Sources */,
 				052980102167978B00AC6348 /* Presentable.swift in Sources */,
 				0529800A2167978B00AC6348 /* Coordinator.swift in Sources */,
+				052980AD216863F300AC6348 /* AddQuestionsTask.swift in Sources */,
 				05298086216816E100AC6348 /* FileModel.swift in Sources */,
 				052980352167BE5600AC6348 /* AppConstants.swift in Sources */,
 				052980052167978B00AC6348 /* ApplicationCoordinator.swift in Sources */,
@@ -749,6 +760,7 @@
 				0529806F2167E2C700AC6348 /* BuyMieOperation.swift in Sources */,
 				05297FC52167965800AC6348 /* NSDateHelper.swift in Sources */,
 				0529808021680CAE00AC6348 /* FolderTableViewCell.swift in Sources */,
+				052980AB216858E800AC6348 /* ViewController.swift in Sources */,
 				052980712167E2C700AC6348 /* Dispatcher.swift in Sources */,
 				052980782167E56800AC6348 /* BuyMieRequest.swift in Sources */,
 				0529801A216798AC00AC6348 /* BaseModulFactoryImp.swift in Sources */,

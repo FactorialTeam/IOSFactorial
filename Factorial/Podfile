@@ -9,5 +9,6 @@ target 'Factorial' do
     pod 'SwiftyJSON'
     pod 'Alamofire'
     pod 'MMDrawerController'
+    pod 'SwiftOCR'
 
 end

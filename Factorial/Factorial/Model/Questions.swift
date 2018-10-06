@@ -17,6 +17,14 @@ class Question {
         self.text = json[Keys.text].stringValue
         self.questionId = json[Keys.questionId].intValue
     }
+    
+    var bodyParams: [String: Any] {
+        var params = [String: Any]()
+        params[Keys.text] = text
+        params[Keys.questionId] = questionId!
+        return params
+        
+    }
 }
 
 //MARK: Keys

@@ -65,5 +65,10 @@ final class BaseModulFactoryImp:NSObject, BaseModulFactory {
         return vc
     }
     
+    func makeCameraViewController() -> CameraViewController {
+        let vc = CameraViewController.controllerFromStoryboard(.main)
+        return vc
+    }
+    
 }
 

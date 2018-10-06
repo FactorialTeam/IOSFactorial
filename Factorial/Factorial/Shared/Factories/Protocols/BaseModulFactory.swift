@@ -18,6 +18,7 @@ protocol BaseModulFactory {
     func makeQuestionsViewController(file: FileModel) -> QuestionsViewController
     func makeSaveQuestionViewController(file: FileModel) -> SaveQuestionViewController
     func makeTextAnalysisViewController(text: String) -> TextAnalysisViewController
+    func makeCameraViewController() -> CameraViewController
     
     
 }

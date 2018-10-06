@@ -25,10 +25,21 @@ class SaveQuestionViewController: UIViewController {
     }
     
     private func save() {
-        guard let fileToSend = file else {
+        guard let fileToSend = file, let tilte = folderNametextField.text else {
             return
         }
         
+        let task = AddQuestionsTask(file: fileToSend, title: tilte)
+        task.execute(in: NetworkDispatcher.autDispatcher(), taskCompletion: {  [weak self] (value) in
+            guard  let strongSelf = self else { return }
+            strongSelf.complateGeneration()
+        }) { (error, statusCode) in
+            
+        }
+    }
+    
+    private  func complateGeneration() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

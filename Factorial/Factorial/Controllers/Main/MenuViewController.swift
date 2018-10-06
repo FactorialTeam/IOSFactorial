@@ -14,8 +14,7 @@ protocol MenuViewControllerDelegate: class {
 class MenuViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var creditPriceLabel: UILabel!
-    @IBOutlet weak var appVersionLabel: UILabel!
+   
     private let menuItems = MenuItem.allItems
     weak var delegate:MenuViewControllerDelegate?
     lazy var doOnce: () -> Void = {

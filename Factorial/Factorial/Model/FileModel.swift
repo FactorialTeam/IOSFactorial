@@ -26,6 +26,16 @@ class FileModel {
             self.questions = []
         }
     }
+    
+    func bodyParams(with title:String)-> [String: Any] {
+        var params = [String: Any]()
+        params[Keys.ParamsKeys.textId] = fileId!
+        params[Keys.ParamsKeys.folder] = title
+        let questionsList = questions.map{$0.bodyParams}
+        params[Keys.ParamsKeys.questions] = questionsList
+        return params
+        
+    }
 }
 
 //MARK: Keys
@@ -34,4 +44,10 @@ private struct Keys{
     static let fileId = "id"
     static let folderId = "folderID"
     static let questions = "questions"
+    struct ParamsKeys {
+        static let textId = "TextId"
+        static let folder = "Folder"
+        static let questions = "Questions"
+        
+    }
 }

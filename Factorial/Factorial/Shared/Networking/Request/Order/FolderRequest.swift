@@ -13,6 +13,7 @@ enum FolderRequest: BuyMieRequest {
     case addText(text: String)
     case addFolder(title: String)
     case getFiles(folderId: Int)
+    case addQuestions(file: FileModel, title: String)
     case getAllFolders
    
     
@@ -26,6 +27,8 @@ enum FolderRequest: BuyMieRequest {
             return "getByFolder"
         case .getAllFolders:
             return "getAll"
+        case .addQuestions(_,_):
+            return "addQuestions"
         }
     }
     
@@ -39,6 +42,8 @@ enum FolderRequest: BuyMieRequest {
             return .post
         case .getAllFolders:
             return .get
+        case .addQuestions(_,_):
+            return .post
         }
     }
     
@@ -54,6 +59,9 @@ enum FolderRequest: BuyMieRequest {
             return .body(nil)
         case .getFiles(let folderId):
             let body = ["folderID": folderId]
+            return .body(body)
+        case .addQuestions(let file, let title):
+            let body = file.bodyParams(with: title)
             return .body(body)
         }
     }
