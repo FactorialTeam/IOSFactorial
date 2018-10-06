@@ -41,6 +41,23 @@ final class BaseModulFactoryImp:NSObject, BaseModulFactory {
         return vc
     }
     
+    func makeFileListViewController(folderId: Int) -> FileListViewController {
+        let vc = FileListViewController.controllerFromStoryboard(.main)
+        vc.folderId = folderId
+        return vc
+    }
+    
+    func makeQuestionsViewController(file: FileModel) -> QuestionsViewController {
+        let vc = QuestionsViewController.controllerFromStoryboard(.main)
+        vc.file = file
+        return vc
+    }
+    
+    func makeSaveQuestionViewController(file: FileModel) -> SaveQuestionViewController {
+        let vc = SaveQuestionViewController.controllerFromStoryboard(.main)
+        vc.file = file
+        return vc
+    }
     
 }
 

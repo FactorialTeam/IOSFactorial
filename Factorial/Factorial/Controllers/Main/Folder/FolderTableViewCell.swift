@@ -11,13 +11,17 @@ import UIKit
 class FolderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var foldaerNameLabel: UILabel!
+    @IBOutlet weak var arrowImageView: UIImageView?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    func configure(with folder: FolderModel) {
-        foldaerNameLabel.text = folder.folderName
+    func configure(with title: String, hideArrow: Bool = false) {
+        foldaerNameLabel.text = title
+        if hideArrow {
+            arrowImageView?.isHidden = true
+        }
     }
 
 }

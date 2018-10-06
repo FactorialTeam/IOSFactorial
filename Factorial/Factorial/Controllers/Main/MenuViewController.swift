@@ -64,7 +64,8 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = menuItem.title
             cell.textLabel?.font = Appconstants.Fonts.regularNormalFont
             cell.textLabel?.textColor = UIColor.white
-            cell.textLabel?.highlightedTextColor = UIColor(red: 220.0/255.0, green: 31.0/255.0, blue: 39.0/255.0, alpha: 1)
+            cell.textLabel?.highlightedTextColor = UIColor.black
+//            cell.textLabel?.highlightedTextColor = UIColor(red: 220.0/255.0, green: 31.0/255.0, blue: 39.0/255.0, alpha: 1)
             cell.imageView?.image = UIImage(named: menuItem.iconName)
             cell.imageView?.highlightedImage = UIImage(named: menuItem.selectedIconName)
         }

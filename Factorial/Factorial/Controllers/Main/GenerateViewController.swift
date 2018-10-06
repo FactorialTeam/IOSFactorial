@@ -20,7 +20,22 @@ class GenerateViewController: UIViewController {
 
     //MARK: Actiom
     @IBAction func generateTextAction(_ sender: Any) {
-        print("generateTextAction")
+        self.generate(text: textView.text!)
     }
 
+    private func generate(text: String?) {
+        guard let textToSend = text, !textToSend.isEmpty else {return}
+        let task = AddTextTask(text: textToSend)
+        task.execute(in: NetworkDispatcher.autDispatcher(), taskCompletion: {  [weak self] (value) in
+            guard let file = value, let strongSelf = self else { return }
+            strongSelf.procces(with: file)
+        }) { (error, statusCode) in
+            
+        }
+    }
+    
+    private func procces(with file: FileModel) {
+        let vc = BaseModulFactoryImp().makeSaveQuestionViewController(file: file)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -56,11 +56,18 @@ extension FolderViewController : UITableViewDelegate, UITableViewDataSource {
         }
         if let folders =  folders {
             let folder = folders[indexPath.row]
-            cell.configure(with: folder)
+            cell.configure(with: folder.folderName)
         }
         
         return cell
     
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let folders = self.folders , let folderId = folders[indexPath.row].folderId else { return }
+        let vc = BaseModulFactoryImp().makeFileListViewController(folderId: folderId)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 }
 

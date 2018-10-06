@@ -14,6 +14,10 @@ protocol BaseModulFactory {
     func makeFolderViewController() -> FolderViewController
     func makeMenuViewController(delegate: MenuViewControllerDelegate) -> MenuViewController
     func makeGenerateViewController() -> GenerateViewController
+    func makeFileListViewController(folderId: Int) -> FileListViewController
+    func makeQuestionsViewController(file: FileModel) -> QuestionsViewController
+    func makeSaveQuestionViewController(file: FileModel) -> SaveQuestionViewController
+    
     
 }
 

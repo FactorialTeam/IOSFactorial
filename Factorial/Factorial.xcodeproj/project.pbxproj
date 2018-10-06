@@ -71,6 +71,13 @@
 		0529807B2167E63100AC6348 /* GetAllFoldersTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529807A2167E63100AC6348 /* GetAllFoldersTask.swift */; };
 		0529807E21680C8800AC6348 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529807D21680C8800AC6348 /* FolderViewController.swift */; };
 		0529808021680CAE00AC6348 /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529807F21680CAE00AC6348 /* FolderTableViewCell.swift */; };
+		05298086216816E100AC6348 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05298085216816E100AC6348 /* FileModel.swift */; };
+		0529808A2168187500AC6348 /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052980892168187500AC6348 /* FileListViewController.swift */; };
+		0529808D2168196800AC6348 /* GetFilesTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529808C2168196800AC6348 /* GetFilesTasks.swift */; };
+		0529808F21681D3700AC6348 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529808E21681D3700AC6348 /* Questions.swift */; };
+		05298095216825BD00AC6348 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05298094216825BD00AC6348 /* QuestionsViewController.swift */; };
+		0529809721682B0300AC6348 /* AddTextTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529809621682B0300AC6348 /* AddTextTask.swift */; };
+		0529809B216834C400AC6348 /* SaveQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529809A216834C400AC6348 /* SaveQuestionViewController.swift */; };
 		6C5DAB495E82CC9CD00294F5 /* Pods_Factorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +148,13 @@
 		0529807A2167E63100AC6348 /* GetAllFoldersTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllFoldersTask.swift; sourceTree = "<group>"; };
 		0529807D21680C8800AC6348 /* FolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		0529807F21680CAE00AC6348 /* FolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
+		05298085216816E100AC6348 /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		052980892168187500AC6348 /* FileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
+		0529808C2168196800AC6348 /* GetFilesTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFilesTasks.swift; sourceTree = "<group>"; };
+		0529808E21681D3700AC6348 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		05298094216825BD00AC6348 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		0529809621682B0300AC6348 /* AddTextTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextTask.swift; sourceTree = "<group>"; };
+		0529809A216834C400AC6348 /* SaveQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveQuestionViewController.swift; sourceTree = "<group>"; };
 		077F0F016E49CC34A1807DF6 /* Pods-Factorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.debug.xcconfig"; sourceTree = "<group>"; };
 		4889BE0F67AC5586E5A72B64 /* Pods-Factorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factorial/Pods-Factorial.release.xcconfig"; sourceTree = "<group>"; };
 		EAB1D0607AE6C5D1DA01E32E /* Pods_Factorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -397,6 +411,8 @@
 			isa = PBXGroup;
 			children = (
 				052980562167DF5600AC6348 /* FolderModel.swift */,
+				05298085216816E100AC6348 /* FileModel.swift */,
+				0529808E21681D3700AC6348 /* Questions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,6 +441,7 @@
 		0529805A2167E2C700AC6348 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				0529808B2168194400AC6348 /* FileModel */,
 				052980792167E61500AC6348 /* Folder */,
 			);
 			path = Tasks;
@@ -483,6 +500,7 @@
 		0529807C21680C8800AC6348 /* Folder */ = {
 			isa = PBXGroup;
 			children = (
+				052980822168169000AC6348 /* File */,
 				0529807D21680C8800AC6348 /* FolderViewController.swift */,
 				0529807F21680CAE00AC6348 /* FolderTableViewCell.swift */,
 			);
@@ -494,6 +512,33 @@
 			children = (
 			);
 			path = AddQuastionViewController;
+			sourceTree = "<group>";
+		};
+		052980822168169000AC6348 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				05298093216825A600AC6348 /* Questions */,
+				052980892168187500AC6348 /* FileListViewController.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		0529808B2168194400AC6348 /* FileModel */ = {
+			isa = PBXGroup;
+			children = (
+				0529808C2168196800AC6348 /* GetFilesTasks.swift */,
+				0529809621682B0300AC6348 /* AddTextTask.swift */,
+			);
+			path = FileModel;
+			sourceTree = "<group>";
+		};
+		05298093216825A600AC6348 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				05298094216825BD00AC6348 /* QuestionsViewController.swift */,
+				0529809A216834C400AC6348 /* SaveQuestionViewController.swift */,
+			);
+			path = Questions;
 			sourceTree = "<group>";
 		};
 		DE1BFEBB8D4BD481D4DA6178 /* Frameworks */ = {
@@ -662,6 +707,7 @@
 				0529801E216798AC00AC6348 /* AutModulFactory.swift in Sources */,
 				05297FC12167965800AC6348 /* FloatPriceFromat.swift in Sources */,
 				05297FCA2167965800AC6348 /* NSObjectExtensions.swift in Sources */,
+				0529808D2168196800AC6348 /* GetFilesTasks.swift in Sources */,
 				0529800F2167978B00AC6348 /* Router.swift in Sources */,
 				05297FEB2167965800AC6348 /* StoryboardsEnum.swift in Sources */,
 				052980062167978B00AC6348 /* BaseCoordinator.swift in Sources */,
@@ -669,9 +715,11 @@
 				052980702167E2C700AC6348 /* BuyMieResponse.swift in Sources */,
 				0529801B216798AC00AC6348 /* AuthModuleFactoryImp.swift in Sources */,
 				05297F5121677E2F00AC6348 /* AppDelegate.swift in Sources */,
+				0529809721682B0300AC6348 /* AddTextTask.swift in Sources */,
 				052980082167978B00AC6348 /* DrawerCoordinator.swift in Sources */,
 				052980102167978B00AC6348 /* Presentable.swift in Sources */,
 				0529800A2167978B00AC6348 /* Coordinator.swift in Sources */,
+				05298086216816E100AC6348 /* FileModel.swift in Sources */,
 				052980352167BE5600AC6348 /* AppConstants.swift in Sources */,
 				052980052167978B00AC6348 /* ApplicationCoordinator.swift in Sources */,
 				0529802C2167B22400AC6348 /* HomeViewController.swift in Sources */,
@@ -682,8 +730,11 @@
 				052980302167B37F00AC6348 /* MenuItem.swift in Sources */,
 				0529802621679A1E00AC6348 /* SignInViewController.swift in Sources */,
 				05297FC22167965800AC6348 /* StringUtils.swift in Sources */,
+				0529808F21681D3700AC6348 /* Questions.swift in Sources */,
 				05297FC82167965800AC6348 /* UIViewExtensions.swift in Sources */,
+				0529809B216834C400AC6348 /* SaveQuestionViewController.swift in Sources */,
 				052980572167DF5600AC6348 /* FolderModel.swift in Sources */,
+				05298095216825BD00AC6348 /* QuestionsViewController.swift in Sources */,
 				052980762167E35B00AC6348 /* FolderRequest.swift in Sources */,
 				0529806F2167E2C700AC6348 /* BuyMieOperation.swift in Sources */,
 				05297FC52167965800AC6348 /* NSDateHelper.swift in Sources */,
@@ -699,6 +750,7 @@
 				0529802421679A0400AC6348 /* SignUpViewController.swift in Sources */,
 				0529801D216798AC00AC6348 /* BaseModulFactory.swift in Sources */,
 				052980322167BE0800AC6348 /* MenuViewController.swift in Sources */,
+				0529808A2168187500AC6348 /* FileListViewController.swift in Sources */,
 				0529800C2167978B00AC6348 /* NavRouter.swift in Sources */,
 				05297FC62167965800AC6348 /* UIViewControllerExtension.swift in Sources */,
 				05298022216799F100AC6348 /* InitialViewController.swift in Sources */,

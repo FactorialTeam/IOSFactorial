@@ -34,9 +34,9 @@ enum MenuItem {
     var selectedIconName:String {
         switch self {
         case .home:
-            return "Shop_red.png"
+            return "Shop.png"
         case .folder:
-            return "ListsRecipes_red.png"
+            return "ListsRecipes.png"
         }
     }
     
