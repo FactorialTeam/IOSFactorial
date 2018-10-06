@@ -13,10 +13,19 @@ class GenerateViewController: UIViewController {
     @IBOutlet weak private var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        addTapGestureRecognizer()
         // Do any additional setup after loading the view.
     }
     
+    private func addTapGestureRecognizer() {
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapBlurButton(_:)))
+
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    @objc func tapBlurButton(_ sender: UITapGestureRecognizer? = nil) {
+        textView.resignFirstResponder()
+    }
 
     //MARK: Actiom
     @IBAction func generateTextAction(_ sender: Any) {
