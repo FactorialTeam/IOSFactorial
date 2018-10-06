@@ -59,5 +59,11 @@ final class BaseModulFactoryImp:NSObject, BaseModulFactory {
         return vc
     }
     
+    func makeTextAnalysisViewController(text: String) -> TextAnalysisViewController {
+        let vc = TextAnalysisViewController.controllerFromStoryboard(.main)
+        vc.text = text
+        return vc
+    }
+    
 }
 

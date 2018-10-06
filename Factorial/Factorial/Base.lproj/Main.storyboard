@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m9Q-IX-DaH">
-                                <rect key="frame" x="20" y="60" width="335" height="507"/>
+                                <rect key="frame" x="20" y="60" width="335" height="457"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Snakes can help predict future of the Paris
 
@@ -130,7 +130,7 @@ Mountain lions can whistle</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FC-tB-zm5">
-                                <rect key="frame" x="20" y="597" width="335" height="30"/>
+                                <rect key="frame" x="20" y="547" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.1058823529" green="0.72156862749999995" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Genrate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,16 +139,29 @@ Mountain lions can whistle</string>
                                     <action selector="generateTextAction:" destination="n2a-LZ-USu" eventType="touchUpInside" id="UDo-GP-wme"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBg-kK-Qcs">
+                                <rect key="frame" x="20" y="597" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.72156862749999995" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Analize">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="analiseAction:" destination="n2a-LZ-USu" eventType="touchUpInside" id="tXk-rN-MVo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="m9Q-IX-DaH" firstAttribute="trailing" secondItem="hLo-B6-OK2" secondAttribute="trailing" constant="-20" id="4DE-JP-ak0"/>
                             <constraint firstItem="0FC-tB-zm5" firstAttribute="leading" secondItem="m9Q-IX-DaH" secondAttribute="leading" id="AcP-sF-Pck"/>
-                            <constraint firstItem="0FC-tB-zm5" firstAttribute="bottom" secondItem="hLo-B6-OK2" secondAttribute="bottom" constant="-40" id="Azf-TH-qAV"/>
                             <constraint firstItem="0FC-tB-zm5" firstAttribute="top" secondItem="m9Q-IX-DaH" secondAttribute="bottom" constant="30" id="RYe-ir-Tgh"/>
                             <constraint firstItem="m9Q-IX-DaH" firstAttribute="leading" secondItem="hLo-B6-OK2" secondAttribute="leading" constant="20" id="TC9-4b-slt"/>
+                            <constraint firstItem="dBg-kK-Qcs" firstAttribute="top" secondItem="0FC-tB-zm5" secondAttribute="bottom" constant="20" id="Xwg-Ko-PdC"/>
                             <constraint firstItem="0FC-tB-zm5" firstAttribute="trailing" secondItem="m9Q-IX-DaH" secondAttribute="trailing" id="e1a-Xk-ZW4"/>
+                            <constraint firstItem="dBg-kK-Qcs" firstAttribute="trailing" secondItem="0FC-tB-zm5" secondAttribute="trailing" id="k1C-xI-dcA"/>
+                            <constraint firstItem="dBg-kK-Qcs" firstAttribute="bottom" secondItem="hLo-B6-OK2" secondAttribute="bottom" constant="-40" id="lYU-Xu-CrC"/>
                             <constraint firstItem="m9Q-IX-DaH" firstAttribute="top" secondItem="hLo-B6-OK2" secondAttribute="top" constant="40" id="mrH-DL-K9A"/>
+                            <constraint firstItem="dBg-kK-Qcs" firstAttribute="leading" secondItem="0FC-tB-zm5" secondAttribute="leading" id="nqw-0u-50U"/>
                             <constraint firstItem="0FC-tB-zm5" firstAttribute="width" secondItem="m9Q-IX-DaH" secondAttribute="width" id="y2z-1M-E4D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hLo-B6-OK2"/>
@@ -448,6 +461,78 @@ Mountain lions can whistle</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="270-ol-g4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3512.8000000000002" y="-161.46926536731635"/>
+        </scene>
+        <!--Text Analysis-->
+        <scene sceneID="ehg-He-R8y">
+            <objects>
+                <viewController storyboardIdentifier="TextAnalysisViewController" title="Text Analysis" id="5yQ-rY-K59" customClass="TextAnalysisViewController" customModule="Factorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0V-qN-ZgM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-Ir-PJ2">
+                                <rect key="frame" x="20" y="30" width="335" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">
+The Apple App Store launched in July 2008.
+
+Snakes can help predict earthquakes.
+The world’s oldest piece of chewing gum is over 9,000 years old”.
+
+Earth has traveled more than 5,000 miles in the past 5 minutes".
+"Mountain lions can whistle"</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="5yI-HK-PN6">
+                                <rect key="frame" x="20" y="541" width="335" height="29"/>
+                                <segments>
+                                    <segment title="Part of Speech"/>
+                                    <segment title="Name Identification"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tagSchemesSegmentedControlPressed:" destination="5yQ-rY-K59" eventType="valueChanged" id="FRQ-95-Cju"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="SCn-2N-Pwh">
+                                <rect key="frame" x="20" y="589" width="335" height="29"/>
+                                <segments>
+                                    <segment title="noun"/>
+                                    <segment title="verb"/>
+                                    <segment title="adjective"/>
+                                    <segment title="determiner"/>
+                                </segments>
+                                <connections>
+                                    <action selector="partOfSpeechSegmentedControlPressed:" destination="5yQ-rY-K59" eventType="valueChanged" id="ZDN-a6-7wa"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SCn-2N-Pwh" firstAttribute="top" secondItem="5yI-HK-PN6" secondAttribute="bottom" constant="20" id="4lb-qC-tNS"/>
+                            <constraint firstItem="6Ph-wD-mpa" firstAttribute="trailing" secondItem="4Oc-Ir-PJ2" secondAttribute="trailing" constant="20" id="7Gr-W3-nw9"/>
+                            <constraint firstItem="5yI-HK-PN6" firstAttribute="leading" secondItem="6Ph-wD-mpa" secondAttribute="leading" constant="20" id="Edi-uE-dPH"/>
+                            <constraint firstItem="5yI-HK-PN6" firstAttribute="top" secondItem="4Oc-Ir-PJ2" secondAttribute="bottom" constant="25" id="Gdj-9H-QZa"/>
+                            <constraint firstItem="4Oc-Ir-PJ2" firstAttribute="leading" secondItem="6Ph-wD-mpa" secondAttribute="leading" constant="20" id="Kq0-Tk-B1d"/>
+                            <constraint firstItem="4Oc-Ir-PJ2" firstAttribute="top" secondItem="6Ph-wD-mpa" secondAttribute="top" constant="10" id="WRU-Np-6V4"/>
+                            <constraint firstItem="5yI-HK-PN6" firstAttribute="top" secondItem="4Oc-Ir-PJ2" secondAttribute="bottom" constant="25" id="XBV-Zh-Nff"/>
+                            <constraint firstItem="6Ph-wD-mpa" firstAttribute="trailing" secondItem="SCn-2N-Pwh" secondAttribute="trailing" constant="20" id="bSf-Wk-lU2"/>
+                            <constraint firstItem="6Ph-wD-mpa" firstAttribute="bottom" secondItem="SCn-2N-Pwh" secondAttribute="bottom" constant="50" id="geo-z5-2NY"/>
+                            <constraint firstItem="SCn-2N-Pwh" firstAttribute="leading" secondItem="6Ph-wD-mpa" secondAttribute="leading" constant="20" id="rcS-vf-ovy"/>
+                            <constraint firstItem="6Ph-wD-mpa" firstAttribute="trailing" secondItem="5yI-HK-PN6" secondAttribute="trailing" constant="20" id="tF3-qv-RPb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ph-wD-mpa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XaX-hD-bOa"/>
+                    <connections>
+                        <outlet property="partOfSpeechSegmentedControl" destination="SCn-2N-Pwh" id="pIc-ke-p1e"/>
+                        <outlet property="tagSchemesSegmentedControl" destination="5yI-HK-PN6" id="WHA-1j-goT"/>
+                        <outlet property="textView" destination="4Oc-Ir-PJ2" id="6um-8f-gj3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aM-b5-2y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="520"/>
         </scene>
     </scenes>
     <resources>

@@ -17,6 +17,7 @@ protocol BaseModulFactory {
     func makeFileListViewController(folderId: Int) -> FileListViewController
     func makeQuestionsViewController(file: FileModel) -> QuestionsViewController
     func makeSaveQuestionViewController(file: FileModel) -> SaveQuestionViewController
+    func makeTextAnalysisViewController(text: String) -> TextAnalysisViewController
     
     
 }

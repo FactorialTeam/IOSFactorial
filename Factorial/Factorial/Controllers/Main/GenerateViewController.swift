@@ -22,6 +22,10 @@ class GenerateViewController: UIViewController {
     @IBAction func generateTextAction(_ sender: Any) {
         self.generate(text: textView.text!)
     }
+    
+    @IBAction func analiseAction(_ sender: Any) {
+        self.showAnalizeText(textView.text!)
+    }
 
     private func generate(text: String?) {
         guard let textToSend = text, !textToSend.isEmpty else {return}
@@ -36,6 +40,11 @@ class GenerateViewController: UIViewController {
     
     private func procces(with file: FileModel) {
         let vc = BaseModulFactoryImp().makeSaveQuestionViewController(file: file)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func showAnalizeText(_ text: String) {
+        let vc = BaseModulFactoryImp().makeTextAnalysisViewController(text: text)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
