@@ -21,7 +21,7 @@ class FolderViewController: UIViewController {
     }
     
     private func configureNavigation() {
-        self.navigationController?.navigationItem.title = "Folder"
+        self.navigationItem.title = "Folder"
         self.navigationItem.leftBarButtonItem = menuButtonItem
     }
     

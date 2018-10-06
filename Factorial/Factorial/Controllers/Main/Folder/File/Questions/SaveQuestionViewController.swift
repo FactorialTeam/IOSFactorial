@@ -65,3 +65,9 @@ extension SaveQuestionViewController : UITableViewDelegate, UITableViewDataSourc
 }
 
 
+extension SaveQuestionViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
