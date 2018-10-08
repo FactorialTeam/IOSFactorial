@@ -30,7 +30,7 @@ class AddQuestionsTask: BuyMieOperation {
                             switch response {
                             case .value(let responseDict):
                                 guard let responseDict = responseDict as? [String: Any],
-                                    let fileDict = responseDict["result"] as? [String: Any]  else {
+                                    let fileDict = responseDict["success"] as? Int  else {
                                         completionError(NetworkErrors.networkMessage(error_: "", message: "Can't rate order"), 200)
                                         return
                                 }

@@ -39,7 +39,7 @@ class SaveQuestionViewController: UIViewController {
     }
     
     private  func complateGeneration() {
-        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
 
